@@ -500,6 +500,21 @@ th {
   margin-bottom: 10px;
   z-index: 1;
 }
+.ae-content .hero:after {
+  position: absolute;
+  z-index: 998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 384px;
+  content: '.';
+}
+.ae-content .hero.dark-gradient:after {
+  background: url('../img/global/dark_gradient.png') repeat-x top;
+}
+.ae-content .hero.light-gradient:after {
+  background: url('../img/global/light_gradient.png') repeat-x top;
+}
 .ae-content .hero .ae-search {
   position: absolute;
   left: 0%;
@@ -1189,6 +1204,10 @@ th {
   font-size: 16px;
   font-weight: normal;
   display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0;
 }
 .ae-content[data-page='category'] .content-container .column-right .ae-pagination {
   text-align: right;
@@ -1293,7 +1312,7 @@ th {
   border: none;
 }
 .ae-content[data-page='homepage'] .hero .ae-search {
-  z-index: 48;
+  z-index: 999;
 }
 .ae-content[data-page='homepage'] .hero .flexslider {
   margin: 0px;
@@ -1398,6 +1417,7 @@ th {
   text-align: left;
   left: 10%;
   width: inherit;
+  z-index: 1000;
 }
 .ae-content[data-page='homepage'] .hero .flexslider .flex-control-nav li {
   margin-right: 35px;
