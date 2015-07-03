@@ -1,0 +1,306 @@
+<html>
+    <head>
+        <meta charset='utf-8' />
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
+        <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1' />
+
+        <title>Category</title>
+
+        <link rel="stylesheet" href="styles/styles.css">
+        <!--[if lt IE 9]>
+            <script src="scripts/vendor/html5shiv.js"></script>
+        <![endif]-->
+        
+        
+
+        <!--<apex:stylesheet value="https://christophermil.es/temp/amex/internal-community/styles/core.css" />-->
+    </head>
+
+    <body>
+
+        <!-- CONTENT -->
+        <div class='ae-content' data-page='category'>
+            <header class='hero'>
+                    <div class="ae-search">
+                        <table class="searchWrapper">
+                            <tr>
+                                <td class="searchInput">
+                                    <div class='icn-search'></div>
+                                    <input type="text" name="" value="" placeholder="Search the Community, Connection, People, or Chatter" />
+                                </td>
+                                <td>
+                                    <a href="#" class="button"><div class="icn-profile"></div>Profile</a>
+                                </td>
+                                <td>
+                                    <a href="#" class="button"><div class="icn-groups"></div>Groups</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class='hero-img'>
+                        <img src='img/category/hero-category-shaded.jpg' />
+                    </div>
+
+                    <div class="hero-title">
+                        <h2 class="light">GCP Academy</h2>
+                        <h3 class="light">Explore the collection of best-of GCP trainings designed for new hires, tenured employees, and leaders in the Field.</h3>
+                    </div>
+
+            </header>
+            <div class='content-container'>
+
+                <main class='main-content'>
+
+                    <div class="breadcrumbs"><a href="#" class="icn-home"></a>&gt;<a href="#">TRAINING</a></div>
+
+
+                    <div class='column-left'>
+                        <div class="ae-category">
+                            <span class="label">Category</span>
+                            <select class="category-list"> <!-- Styling is powered by SlickSelect.js -->
+                                <!-- these values coorespond to the JS. If changed in markup, they will need to be changed in main.js -->
+                                <option selected="selected" value="training">Training</option> 
+                                <option value="Field Updates">Field Updates</option>
+                                <option value="Leadership Corner">Leadership Corner</option>
+                                <option value="What Trending">What's Trending</option>
+                                <option value="Top News Stories &amp; Press Releases">Top News Stories &amp; Press Releases</option>
+                                <option value="Employee Recognition">Employee Recognition</option>
+                                <option value="Customer Stories">Customer Stories</option>
+                                <option value="Insights &amp; Best Practices">Insights &amp; Best Practices</option>
+                                <option value="Events &amp; Activities">Events &amp; Activities</option>
+                            </select>
+                        </div>
+                        <div class="ae-subcat">
+                            <span class="label">Subcategory</span>
+                            <select class="subcat-list"> <!-- Styling is powered by SlickSelect.js -->
+                                <!-- these values coorespond to the JS. If changed in markup, they will need to be changed in main.js -->
+                                
+                                
+                                <option selected="selected" value="View All">View All</option> 
+                                <option value="Products, Solutions &amp; Value Prop">Products, Solutions &amp; Value Prop</option>
+                                <option value="Challenger &amp; Selling Skills">Challenger &amp; Selling Skills</option>
+                                <option value="Financial Acumen, Risk &amp; Pricing">Financial Acumen, Risk &amp; Pricing</option>
+                                <option value="Processes, Tools &amp; SFDC ">Processes, Tools &amp; SFDC </option>
+                                <option value="Professional Development &amp; Leadership">Professional Development &amp; Leadership</option>
+                                <option value="Global New Hire Training">Global New Hire Training</option>
+                            
+                            </select>
+                        </div>
+                        <div class="ae-region">
+                            <span class="label">Regions &amp; Teams</span>
+                            <select class="region-list"> <!-- Styling is powered by SlickSelect.js -->
+                                <!-- these values coorespond to the JS. If changed in markup, they will need to be changed in main.js -->
+                                <option value="My Region &amp; Teams">My Region &amp; Teams</option>
+                                <option value="View All">View All</option>
+                            </select>
+                        </div>
+                    </div><!-- END: .content .column-left -->
+
+                    <div class='column-right'>
+                        <div class="ae-sort">
+                            <span class="label">Sort By</span>
+                            <select class="sort-list"> <!-- Styling is powered by SlickSelect.js -->
+                                <!-- these values coorespond to the JS. If changed in markup, they will need to be changed in main.js -->
+                                <option selected="selected" value="recent">Recent</option> 
+                                <option value="author">Author</option>
+                            </select>
+                        </div>
+                            <ul id="ae-results" class="ae-results">
+                                <li class="ae-results-heading">
+                                    <div class="col">Subcategory / Article</div>
+                                    <div class="col">Author</div>
+                                    <div class="col">Date</div>
+                                </li>
+                                <!-- ALL list items that will be sorted must have the "ae-results-list" class. 
+                                Any other elements in this list with this class will be included in the sorting functionality -->
+                                <li class="ae-results-list"> 
+                                    <div class="col">
+                                        <a href="#">
+                                            <span class="h4">Products, Solutions, &amp; Value Prop</span>
+                                            <span class="title">An Introduction to the American Express GCP Value Proposition</span>
+                                        </a>  
+                                    </div>
+                                    <div class="col name">Wade Wilson</div>
+                                    <div class="col date">Apr 3, 2014</div>
+                                </li>
+                                <li class="ae-results-list">
+                                    <div class="col">
+                                        <a href="#">
+                                            <span class="h4">Challenger &amp; Selling Skills</span>
+                                            <span class="title">Finance 101</span>
+                                        </a>
+                                    </div>
+                                    <div class="col name">Ed Kretz</div>
+                                    <div class="col date">Apr 15, 2014</div>
+                                </li>
+                                <li class="ae-results-list">
+                                    <div class="col">
+                                        <a href="#">
+                                            <span class="h4">Financial Acumen, Risk, &amp; Pricing</span>
+                                            <span class="title">Communicating the Value Proposition</span>
+                                        </a>
+                                    </div>
+                                    <div class="col name">Barb Agoglia</div>
+                                    <div class="col date">Apr 15, 2014</div>
+                                </li>
+                                <li class="ae-results-list">
+                                    <div class="col">
+                                        <a href="#">
+                                            <span class="h4">Processes, Tools, &amp; SFDC</span>
+                                            <span class="title">Principles of Account and Finance</span>
+                                        </a>
+                                    </div>
+                                    <div class="col name">Tyler Durden</div>
+                                    <div class="col date">Apr 15, 2014</div>
+                                </li>                                
+                                <li class="ae-results-list"> 
+                                    <div class="col">
+                                        <a href="#">
+                                            <span class="h4">Products, Solutions, &amp; Value Prop</span>
+                                            <span class="title">An Introduction to the American Express GCP Value Proposition</span>
+                                        </a>  
+                                    </div>
+                                    <div class="col name">Wade Wilson</div>
+                                    <div class="col date">Apr 3, 2014</div>
+                                </li>
+                                <li class="ae-results-list">
+                                    <div class="col">
+                                        <a href="#">
+                                            <span class="h4">Challenger &amp; Selling Skills</span>
+                                            <span class="title">Finance 101</span>
+                                        </a>
+                                    </div>
+                                    <div class="col name">Ed Kretz</div>
+                                    <div class="col date">Apr 15, 2014</div>
+                                </li>
+                                <li class="ae-results-list">
+                                    <div class="col">
+                                        <a href="#">
+                                            <span class="h4">Financial Acumen, Risk, &amp; Pricing</span>
+                                            <span class="title">Communicating the Value Proposition</span>
+                                        </a>
+                                    </div>
+                                    <div class="col name">Barb Agoglia</div>
+                                    <div class="col date">Apr 15, 2014</div>
+                                </li>
+                                <li class="ae-results-list">
+                                    <div class="col">
+                                        <a href="#">
+                                            <span class="h4">Processes, Tools, &amp; SFDC</span>
+                                            <span class="title">Principles of Account and Finance</span>
+                                        </a>
+                                    </div>
+                                    <div class="col name">Tyler Durden</div>
+                                    <div class="col date">Apr 15, 2014</div>
+                                </li>                                
+                                <li class="ae-results-list"> 
+                                    <div class="col">
+                                        <a href="#">
+                                            <span class="h4">Products, Solutions, &amp; Value Prop</span>
+                                            <span class="title">An Introduction to the American Express GCP Value Proposition</span>
+                                        </a>  
+                                    </div>
+                                    <div class="col name">Wade Wilson</div>
+                                    <div class="col date">Apr 3, 2014</div>
+                                </li>
+                                <li class="ae-results-list">
+                                    <div class="col">
+                                        <a href="#">
+                                            <span class="h4">Challenger &amp; Selling Skills</span>
+                                            <span class="title">Finance 101</span>
+                                        </a>
+                                    </div>
+                                    <div class="col name">Ed Kretz</div>
+                                    <div class="col date">Apr 15, 2014</div>
+                                </li>
+                                <li class="ae-results-list">
+                                    <div class="col">
+                                        <a href="#">
+                                            <span class="h4">Financial Acumen, Risk, &amp; Pricing</span>
+                                            <span class="title">Communicating the Value Proposition</span>
+                                        </a>
+                                    </div>
+                                    <div class="col name">Barb Agoglia</div>
+                                    <div class="col date">Apr 15, 2014</div>
+                                </li>
+                                <li class="ae-results-list">
+                                    <div class="col">
+                                        <a href="#">
+                                            <span class="h4">Processes, Tools, &amp; SFDC</span>
+                                            <span class="title">Principles of Account and Finance</span>
+                                        </a>
+                                    </div>
+                                    <div class="col name">Tyler Durden</div>
+                                    <div class="col date">Apr 15, 2014</div>
+                                </li>                                
+                                <li class="ae-results-list"> 
+                                    <div class="col">
+                                        <a href="#">
+                                            <span class="h4">Products, Solutions, &amp; Value Prop</span>
+                                            <span class="title">An Introduction to the American Express GCP Value Proposition</span>
+                                        </a>  
+                                    </div>
+                                    <div class="col name">Wade Wilson</div>
+                                    <div class="col date">Apr 3, 2014</div>
+                                </li>
+                                <li class="ae-results-list">
+                                    <div class="col">
+                                        <a href="#">
+                                            <span class="h4">Challenger &amp; Selling Skills</span>
+                                            <span class="title">Finance 101</span>
+                                        </a>
+                                    </div>
+                                    <div class="col name">Ed Kretz</div>
+                                    <div class="col date">Apr 15, 2014</div>
+                                </li>
+                                <li class="ae-results-list">
+                                    <div class="col">
+                                        <a href="#">
+                                            <span class="h4">Financial Acumen, Risk, &amp; Pricing</span>
+                                            <span class="title">Communicating the Value Proposition</span>
+                                        </a>
+                                    </div>
+                                    <div class="col name">Barb Agoglia</div>
+                                    <div class="col date">Apr 15, 2014</div>
+                                </li>
+                                <li class="ae-results-list">
+                                    <div class="col">
+                                        <a href="#">
+                                            <span class="h4">Processes, Tools, &amp; SFDC</span>
+                                            <span class="title">Principles of Account and Finance</span>
+                                        </a>
+                                    </div>
+                                    <div class="col name">Tyler Durden</div>
+                                    <div class="col date">Apr 15, 2014</div>
+                                </li>                       
+
+                            </ul>
+                        <div class="ae-pagination">
+                            <ul>
+                                <li class="previous"><a href="" class="active"></a></li>
+                                <li class="current">2 of 15</li>
+                                <li class="next"><a href="" class="active"></a></li>
+                            </ul>
+                        </div>
+                    </div><!-- END: .content .column-right -->
+
+
+                </main><!-- END: .content -->
+
+            </div><!-- END: .content-container -->
+        </div><!-- END: .ae-content -->
+
+        <!-- SCRIPTS -->
+        <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
+        <script>window.jQuery || document.write('<script src="scripts/vendor/jquery/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+        <script src="scripts/SlickSelect.js"></script>
+        <script src="scripts/vendor/placeholders.min.js"></script>
+        <script src="scripts/main.js"></script>
+
+
+
+
+    </body>
+</html>

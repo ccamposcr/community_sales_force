@@ -1,0 +1,163 @@
+.ae-content{
+
+	&[data-page='category']{
+
+		.content-container{
+			select {
+				display:none;
+			}
+
+			.slickselect {
+				display:inline-block;
+				min-width:130px;
+				box-sizing:border-box;
+				-moz-box-sizing:border-box;
+				-webkit-box-sizing:border-box;
+				padding: 6px 20px 6px 6px;
+				line-height:1em;
+				position:relative;
+				z-index:1;
+				cursor:pointer;
+				color:@grey-fonts;
+				-webkit-touch-callout:none;
+			    user-select:none;
+			    -moz-user-select:none;
+			    -webkit-user-select:none;
+			    -ms-user-select:none;
+				background-color: #FFFFFF;
+			    text-align: left;
+
+			    &:before{
+					content:"";
+					display:block;
+					position:absolute;
+					right:8px;
+					width: 10px;
+					height:10px;
+					background: transparent url('../img/global/sprite.png') no-repeat -4px -4px;			    	
+			    }
+
+			    &:focus{
+		    		outline:none;
+					-moz-outline:none;
+					-webkit-outline:none;
+			    }
+
+			    &.slickselect-open {
+
+			    	&:before{
+		    			content:"";
+						display:block;
+						position:absolute;
+						right:8px;
+						width: 10px;
+						height:10px;
+						background: transparent url('../img/global/sprite.png') no-repeat -4px -58px;
+			    	}
+
+			    	ul {
+						display:block;
+					}
+
+				}
+
+				ul {
+					display:none;
+					position:absolute;
+					top:100%;
+					left:0;
+					width:100%;
+					overflow:hidden;
+
+					li{
+						padding:8px 32px 8px 6px;
+						margin-left: 15px;
+
+						&:hover{
+							background-color:transparent;
+						}
+
+						&.slickselect-key-highlight{
+							background-color:transparent;
+						}
+					}
+				}
+
+			}
+
+			.column-left{
+
+				.ae-category {
+					z-index:1005;
+					position:relative;
+				}
+
+				.ae-subcat {
+					z-index:1003;
+					position:relative;
+				}
+				.ae-region {
+					z-index:1001;
+					position:relative;
+				}
+
+				.label{
+					display: block;
+					font:bold 12px 'Arial', sans-serif;
+					text-transform: uppercase;
+					color:@grey;
+					padding: 10px 0;
+
+					.icn-home{
+						position:absolute;
+						top:10px;
+						right:0px;
+						width: 12px;
+						height:15px;
+						background: transparent url('../img/global/sprite.png') no-repeat 1px -74px;
+						border-left: 1px solid @grey;
+						padding-left: 12px;
+					}
+				}
+				.slickselect{
+					display: block;
+					font:12px 'Arial', sans-serif;
+					ul {
+						position: absolute;
+						margin-top:0px;
+						background-color:#fff;
+
+						li{
+							padding-left:6px;
+
+							&:hover{
+								color:@teal;
+							}
+						}
+					}
+				}
+			}
+
+			.column-right{
+
+				.slickselect{
+					background:@grey-lightest;
+
+					ul{
+						background: @grey-lightest;
+
+						/* if needed, uncomment */
+						/*						
+						li{ 
+							&:hover{
+								background:  @grey-lighter;
+							}
+						}
+						*/
+					}
+				}
+
+			}
+		}
+	}
+}

@@ -1,0 +1,48 @@
+.ae-content{
+	width:100%;
+	min-width: 965px;
+	
+	.content-container{
+	
+		margin:0 auto;
+
+		p {
+			color: @grey;
+		}
+
+		a{
+			color: @dark-blue;
+			text-decoration:underline;
+			&:hover{
+				color: @teal;
+			}
+		}
+
+	}
+
+	&[data-page='category']{
+
+		.content-container{
+			width:100%;
+
+
+		}
+	}
+
+	&[data-page='article']{
+
+		.content-container{
+			width:800px;
+
+			
+		}
+	}
+
+}
+
+/* SalesForce Overrides */
+
+/* remove white border from Chatter post items */
+.feedcontainer .feeditem {
+	border-top: none;
+}

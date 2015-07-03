@@ -1,0 +1,40 @@
+@icon-arrow-down: -4px, -4px, 10px, 10px;
+@icon-arrows-lt: -4px, -22px, 10px, 10px;
+@icon-arrows-rt: -4px, -39px, 10px, 10px;
+@icon-arrows-rt-dark-blue: -25px, -56px, 10px, 10px;
+@icon-arrows-up: -4px, -58px, 10px, 10px;
+@icon-home: -4px, -76px, 12px, 12px;
+@icon-like-gray: -4px, -96px, 16px, 16px;
+@icon-like: -4px, -118px, 16px, 16px;
+@icon-groups: -4px, -142px, 23px, 25px;
+@icon-profile: -4px, -175px, 16px, 25px;
+@icon-search: -4px, -208px, 25px, 25px;
+@icon-like-over: -4px, -208px, 25px, 25px;
+
+.sprite-width(@sprite) {
+  width: extract(@sprite, 3);
+}
+
+.sprite-height(@sprite) {
+  height: extract(@sprite, 4);
+}
+
+.sprite-position(@sprite) {
+  @sprite-offset-x: extract(@sprite, 1);
+  @sprite-offset-y: extract(@sprite, 2);
+  background-position: @sprite-offset-x  @sprite-offset-y;
+}
+
+.sprite(@sprite) {
+  .sprite-position(@sprite);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  .sprite-width(@sprite);
+  .sprite-height(@sprite);
+}
+
+.icn-sprite {
+  background-image: url('../img/global/sprite.png');
+}
+

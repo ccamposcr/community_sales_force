@@ -1,0 +1,61 @@
+/*Colors*/
+
+@teal:#009bbb;
+@dark-blue: #002663;
+@grey:#4d4f53;
+@grey-fonts: lighten(@grey, 8.25%); /*606060*/
+@grey-light: lighten(@grey, 31.75%); /*9c9c9c*/
+@grey-lighter: lighten(@grey, 51%); /*cdcdcd*/
+@grey-lightest: lighten(@grey, 59.25%); /*e2e2e2*/
+@grey-body: lighten(@grey, 64.75%); /*f0f0f0*/
+
+
+
+/*Fonts*/
+@benton-med: 'BentonSans Medium';
+@benton-book: 'BentonSans Book';
+@benton-light: 'BentonSans Light';
+@benton-thin: 'BentonSans Thin';
+
+
+/*Effects Mix-ins*/
+
+.top-gradient{
+	background: -webkit-linear-gradient(@grey-lighter, white); 
+	background: -o-linear-gradient(@grey-lighter, white); 
+	background: -moz-linear-gradient(@grey-lighter, white); 
+	background: linear-gradient(@grey-lighter, white); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+.bottom-gradient{
+	background: -webkit-linear-gradient(white, @grey-lighter); 
+	background: -o-linear-gradient(white, @grey-lighter); 
+	background: -moz-linear-gradient(white, @grey-lighter); 
+	background: linear-gradient(white, @grey-lighter); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+}
+
+.arrow-up{
+	.sprite(@icon-arrows-up);
+	.icn-sprite;
+}
+
+.arrow-down{
+	.sprite(@icon-arrow-down);
+	.icn-sprite;
+}
+
+.arrow-left{
+	.sprite(@icon-arrows-lt);
+	.icn-sprite;
+}
+
+.arrow-right{
+	.sprite(@icon-arrows-rt);
+	.icn-sprite;
+}
+
+.arrow-right-dark-blue{
+	.sprite(@icon-arrows-rt-dark-blue);
+	.icn-sprite;
+}
