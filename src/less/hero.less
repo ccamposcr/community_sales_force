@@ -4,23 +4,23 @@
 			border-bottom:6px solid @teal;
 			margin-bottom: 10px;			
 			z-index:1;
+			&:not(.empty){
+				.slider-img:after, .hero-img:after{
+	  				position: absolute;
+	  				top: 0;
+	  				left: 0;
+	  				width: 100%;
+	  				height: 100%;
+	  				content: '.';
+				}
 
-			&:after{
-  				position: absolute;
-  				z-index: 998;
-  				top: 0;
-  				left: 0;
-  				width: 100%;
-  				height: 384px;
-  				content: '.';
-			}
+				&.dark-gradient .slider-img:after, &.dark-gradient .hero-img:after{
+					background: url('../img/global/dark_gradient.png') repeat-x top;
+				}
 
-			&.dark-gradient:after{
-				background: url('../img/global/dark_gradient.png') repeat-x top;
-			}
-
-			&.light-gradient:after{
-				background: url('../img/global/light_gradient.png') repeat-x top;
+				&.light-gradient .slider-img:after, &.light-gradient .hero-img:after{
+					background: url('../img/global/light_gradient.png') repeat-x top;
+				}
 			}
 
 			.ae-search{
@@ -29,7 +29,7 @@
 				top:20px;
 				width:100%;
 	    		font-family: 'BentonSans Thin', Arial, Helvetica;
-				z-index: 48; /*put search underneath the SalesForce menus*/
+				z-index: 99; /*put search underneath the SalesForce menus*/
 
 	    		.searchWrapper {
 	    			position:relative;

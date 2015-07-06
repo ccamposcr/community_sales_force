@@ -500,19 +500,21 @@ th {
   margin-bottom: 10px;
   z-index: 1;
 }
-.ae-content .hero:after {
+.ae-content .hero:not(.empty) .slider-img:after,
+.ae-content .hero:not(.empty) .hero-img:after {
   position: absolute;
-  z-index: 998;
   top: 0;
   left: 0;
   width: 100%;
-  height: 384px;
+  height: 100%;
   content: '.';
 }
-.ae-content .hero.dark-gradient:after {
+.ae-content .hero:not(.empty).dark-gradient .slider-img:after,
+.ae-content .hero:not(.empty).dark-gradient .hero-img:after {
   background: url('../img/global/dark_gradient.png') repeat-x top;
 }
-.ae-content .hero.light-gradient:after {
+.ae-content .hero:not(.empty).light-gradient .slider-img:after,
+.ae-content .hero:not(.empty).light-gradient .hero-img:after {
   background: url('../img/global/light_gradient.png') repeat-x top;
 }
 .ae-content .hero .ae-search {
@@ -521,7 +523,7 @@ th {
   top: 20px;
   width: 100%;
   font-family: 'BentonSans Thin', Arial, Helvetica;
-  z-index: 48;
+  z-index: 99;
   /*put search underneath the SalesForce menus*/
 }
 .ae-content .hero .ae-search .searchWrapper {
@@ -1711,6 +1713,10 @@ th {
 .ae-content[data-page='homepage'] .chatter-container .column-right .chatterContent {
   width: 100%;
   min-height: 220px;
+}
+.ext-ie9 b,
+.ext-ie9 strong {
+  font: 14px/25px 'BentonSans Medium';
 }
 .ae-content[data-page='category'] .content-container select {
   display: none;
