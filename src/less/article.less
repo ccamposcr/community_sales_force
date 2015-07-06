@@ -140,10 +140,75 @@
 					display: inline-block;
 				}
 			}
+
+			.column-right{
+				display: inline-block;
+  				vertical-align: top;
+ 				width: 22%;
+  				padding-left: 2%;
+  				margin-top: 2%;
+
+  				.label{
+  					display: block;
+					font: bold 12px 'Arial', sans-serif;
+					text-transform: uppercase;
+					color: #4d4f53;
+					padding: 10px 0;
+  				}
+
+ 				.section{
+			    	background:@grey-lightest;
+			    	padding: 10px 30% 10px 5%;
+			    	margin-bottom: 20px;
+
+			    	hr{
+			    		width:96%;
+			    		margin-right:4%;
+					}
+
+					.ae-related-content{
+						.content-list li{
+
+							border-bottom: 1px solid #bbbbbb;
+							padding-bottom: 20px;
+
+							&:last-child{
+								border-bottom: none;
+							}
+
+							.title{
+								text-transform: uppercase;
+								color: #727272;
+								font-size: 12px;
+							}
+
+							.content-link{
+								text-decoration: underline;
+								color: #616064;
+								font-size: 12px;
+							}
+
+						}
+					}
+
+					.ae-trending-topics{
+						.topics-list li{
+							font: bold 12px 'Arial', sans-serif;
+							color: #4d4f53;
+							margin-bottom: 10px;
+
+							.topic-link{
+								text-decoration: none;
+								color: #4d4f53;
+							}
+						}
+					}
+			    }
+			}
 				
 			.main-content {
 				width:75%;
-
+				display: inline-block;
 				
 				.author{
 

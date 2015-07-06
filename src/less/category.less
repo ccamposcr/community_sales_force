@@ -133,19 +133,36 @@
 					display: inline-block;
 				}
 			}
-
-			.column-left {
-			    width:16%;
-			    padding: 0 1% 10px 10%;
-			    display: inline-block;
+			.column-left{
+				display: inline-block;
 			    vertical-align: baseline;
-			    background:@grey-lightest;
+			    width:26.5%;
 
-			    hr{
-			    	width:96%;
-			    	margin-right:4%;
+			    .section{
+			    	background:@grey-lightest;
+			    	padding: 10px 3% 10px 38%;
+			    	margin-bottom: 20px;
+
+			    	hr{
+			    		width:96%;
+			    		margin-right:4%;
+					}
+
+					.ae-trending-topics{
+						.topics-list li{
+							font: bold 12px 'Arial', sans-serif;
+							color: #4d4f53;
+							margin-bottom: 10px;
+
+							.topic-link{
+								text-decoration: none;
+								color: #4d4f53;
+							}
+						}
+					}
 			    }
 			}
+			
 
 			.column-right {
 			    width:63%;
