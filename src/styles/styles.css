@@ -825,6 +825,12 @@ th {
   color: #727272;
   font-size: 12px;
 }
+.ae-content[data-page='article'] .content-container .column-right .section .ae-related-content .content-list li .desc {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
 .ae-content[data-page='article'] .content-container .column-right .section .ae-related-content .content-list li .content-link {
   text-decoration: underline;
   color: #616064;
@@ -1723,7 +1729,7 @@ th {
 }
 .ae-content[data-page='category'] .content-container .slickselect {
   display: inline-block;
-  min-width: 130px;
+  min-width: 180px;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
