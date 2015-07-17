@@ -786,6 +786,8 @@ th {
   font-size: 12px;
   margin: 15px 0;
   display: block;
+  text-decoration: none;
+  font-weight: bold;
 }
 .ae-content[data-page='article'] .content-container .column-right .section .ae-related-content .content-list li .desc {
   white-space: nowrap;
@@ -795,8 +797,7 @@ th {
   font-size: 130%;
   font-weight: lighter;
 }
-.ae-content[data-page='article'] .content-container .column-right .section .ae-related-content .content-list li .content-link {
-  text-decoration: underline;
+.ae-content[data-page='article'] .content-container .column-right .section .ae-related-content .content-list li .autor {
   color: #616064;
   font-size: 12px;
 }
