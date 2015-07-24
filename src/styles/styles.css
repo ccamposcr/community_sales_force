@@ -1460,8 +1460,9 @@ th {
   font-size: 18px;
   padding-right: 40px;
 }
-.ae-content[data-page='homepage'] .articlePodContainer .articlePod .articlePodTitle:hover {
+.ae-content[data-page='homepage'] .articlePodContainer .articlePod .articlePodTitle a:hover {
   color: #009bbb;
+  text-decoration: none;
 }
 .ae-content[data-page='homepage'] .articlePodContainer .articlePod .articleCategory {
   margin-top: 5px;
@@ -1473,6 +1474,7 @@ th {
 }
 .ae-content[data-page='homepage'] .articlePodContainer .articlePod .articleCategory a:hover {
   color: #009bbb;
+  text-decoration: none;
 }
 .ae-content[data-page='homepage'] .articleExpanderButton {
   background-color: rgba(0, 0, 0, 0);
