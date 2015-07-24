@@ -1435,14 +1435,21 @@ th {
   opacity: 1;
 }
 .ae-content[data-page='homepage'] .articlePodContainer {
-  background-color: #f1f3f4;
+  background-color: #f4f6f7;
   padding-left: 10%;
   padding-right: 10%;
+  padding-bottom: 0.5%;
+}
+.ae-content[data-page='homepage'] .articlePodContainer .categoryBlockTitle {
+  font-family: 'BentonSans Book';
+  font-size: 38px;
+  padding-top: 25px;
+  padding-bottom: 0;
 }
 .ae-content[data-page='homepage'] .articlePodContainer .articlePod {
-  width: 33%;
+  width: 29%;
   display: inline-table;
-  padding: 1% 6% 1% 0%;
+  padding: 1% 4% 1% 0%;
   font-family: 'BentonSans Book';
   margin-top: 12px;
   margin-bottom: 12px;
@@ -1469,8 +1476,8 @@ th {
 }
 .ae-content[data-page='homepage'] .articleExpanderButton {
   background-color: rgba(0, 0, 0, 0);
-  height: 20px;
-  width: 300px;
+  height: 45px;
+  width: 478px;
   left: 0;
   right: 0;
   cursor: pointer;
@@ -1481,6 +1488,8 @@ th {
 .ae-content[data-page='homepage'] .articleExpanderButton img {
   display: block;
   margin: 0 auto;
+  position: relative;
+  top: -15px;
 }
 .ae-content[data-page='homepage'] .articleExpanderButton #FeaturedExpanderClose {
   display: none;
