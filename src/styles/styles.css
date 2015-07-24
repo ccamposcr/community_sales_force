@@ -370,6 +370,25 @@ td,
 th {
   padding: 0;
 }
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix {
+  display: inline-block;
+}
+/* start commented backslash hack \*/
+* html .clearfix {
+  height: 1%;
+}
+.clearfix {
+  display: block;
+}
+/* close commented backslash hack */
 @font-face {
   font-family: 'BentonSans Medium';
   src: url('../fonts/bentonsans-medium-webfont.eot');
@@ -1313,6 +1332,9 @@ th {
   border: none;
   height: 384px;
 }
+.ae-content[data-page='homepage'] .hero .flexslider:hover .flex-direction-nav a {
+  opacity: 1;
+}
 .ae-content[data-page='homepage'] .hero .flexslider .slides li {
   overflow: hidden;
 }
@@ -1369,12 +1391,32 @@ th {
   display: inline-block;
   margin-left: 30px;
 }
-.ae-content[data-page='homepage'] .hero .flexslider .flex-direction-nav {
-  display: none;
+.ae-content[data-page='homepage'] .hero .flexslider .flex-direction-nav a {
+  text-indent: -9999px;
+  color: transparent;
+  font-size: 0;
+  width: 35px;
+  height: 122px;
+  display: block;
+  top: 38%;
+  opacity: 0;
+  /*&:hover{
+							opacity: 1;
+						}*/
+}
+.ae-content[data-page='homepage'] .hero .flexslider .flex-direction-nav a:before {
+  content: none;
+}
+.ae-content[data-page='homepage'] .hero .flexslider .flex-direction-nav a.flex-prev {
+  background: url('../img/sprites/left-arrow-carousel.png') no-repeat;
+  left: 100px;
+}
+.ae-content[data-page='homepage'] .hero .flexslider .flex-direction-nav a.flex-next {
+  background: url('../img/sprites/right-arrow-carousel.png') no-repeat;
+  right: 100px;
 }
 .ae-content[data-page='homepage'] .hero .flexslider .flex-control-nav {
   bottom: 17px;
-  z-index: 100;
   text-align: left;
   left: 10%;
   width: inherit;

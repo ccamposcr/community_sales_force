@@ -1,5 +1,8 @@
 $(window).load(function() {
-    $('.flexslider').flexslider({pauseOnHover: true});
+    $('.flexslider').flexslider({
+                                pauseOnHover: true,
+                                animationLoop: false
+                            });
     if (window.innerWidth > 920 && window.innerWidth < 1300)
     {
         $('.slides li .sliderTitle').css('font-size', window.innerWidth * 0.030 + 'px');
