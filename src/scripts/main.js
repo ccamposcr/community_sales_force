@@ -12,6 +12,7 @@
             AEAPP.slickInit( $(".category-list") );
             AEAPP.slickInit( $(".subcat-list") );
             AEAPP.slickInit( $(".region-list") );
+            AEAPP.slickInit( $(".team-list") );
             AEAPP.evt_handlers(); //append event handlers 
 
             //remove duplicates from menus
@@ -30,6 +31,10 @@
             value = $('select.region-list').val();
             $('.region-list .slickselect-option[data-value]').show();
             $('.region-list .slickselect-option[data-value="' + value + '"]').hide();
+
+            alue = $('select.team-list').val();
+            $('.team-list .slickselect-option[data-value]').show();
+            $('.team-list .slickselect-option[data-value="' + value + '"]').hide();
 
             //SalesForce is focusing on the search box at page load. Unfocus it.
             $('#searchInput').blur();
@@ -71,6 +76,12 @@
                 var value = $(this).val();
                 $('.region-list .slickselect-option[data-value]').show();
                 $('.region-list .slickselect-option[data-value="' + value + '"]').hide();                 
+            });
+
+            $(".team-list").on("change", function(){
+                var value = $(this).val();
+                $('.team-list .slickselect-option[data-value]').show();
+                $('.team-list .slickselect-option[data-value="' + value + '"]').hide();                 
             });
         },
 
