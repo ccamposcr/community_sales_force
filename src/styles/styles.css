@@ -772,7 +772,7 @@ th {
 }
 .ae-content[data-page='article'] .content-container .column-right .section {
   background: #e6e7e8;
-  padding: 10px 30% 10px 5%;
+  padding: 5px 30% 5px 5%;
   margin-bottom: 20px;
   /*.ae-trending-topics{
 						.topics-list li{
@@ -802,11 +802,12 @@ th {
 .ae-content[data-page='article'] .content-container .column-right .section .ae-related-content .content-list li .title {
   text-transform: uppercase;
   color: #727272;
-  font-size: 12px;
+  font-size: 10px;
   margin: 15px 0;
   display: block;
   text-decoration: none;
   font-weight: bold;
+  margin: 10px 0;
 }
 .ae-content[data-page='article'] .content-container .column-right .section .ae-related-content .content-list li .desc {
   white-space: nowrap;
@@ -815,10 +816,19 @@ th {
   width: 100%;
   font-size: 130%;
   font-weight: lighter;
+  display: block;
+  text-decoration: none;
+  color: #2d2d2e;
+}
+.ae-content[data-page='article'] .content-container .column-right .section .ae-related-content .content-list li .desc:hover {
+  text-decoration: none;
+  color: #009bbb;
 }
 .ae-content[data-page='article'] .content-container .column-right .section .ae-related-content .content-list li .autor {
   color: #616064;
-  font-size: 12px;
+  font-size: 10px;
+  margin-top: 6px;
+  display: block;
 }
 .ae-content[data-page='article'] .content-container .main-content {
   width: 75%;
@@ -1025,6 +1035,27 @@ th {
 .ae-content[data-page='article'] .chatter-container .column-right .chatterContent {
   width: 100%;
   min-height: 250px;
+}
+.ae-content[data-page='article'] .topics {
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+.ae-content[data-page='article'] .topics a {
+  text-decoration: none;
+  color: #4b4d51;
+}
+.ae-content[data-page='article'] .topics a:hover {
+  text-decoration: none;
+  color: #015ba7;
+}
+.ae-content[data-page='article'] .topics a:visited {
+  color: #4b4d51;
+}
+.ae-content[data-page='article'] .topics a:active {
+  color: #4b4d51;
+}
+.ae-content[data-page='article'] .topics a:last-child .comma {
+  display: none;
 }
 .ae-content[data-page='category'] .hero {
   margin-bottom: 0px;
