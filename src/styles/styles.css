@@ -1436,9 +1436,9 @@ th {
   color: transparent;
   font-size: 0;
   width: 10%;
-  height: 208px;
+  height: 100%;
   display: block;
-  top: 38%;
+  top: 20px;
   opacity: 0;
 }
 .ae-content[data-page='homepage'] .hero .flexslider .flex-direction-nav a:hover {
