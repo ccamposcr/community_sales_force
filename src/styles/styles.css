@@ -1440,6 +1440,7 @@ th {
   display: block;
   top: 20px;
   opacity: 0;
+  z-index: 999;
 }
 .ae-content[data-page='homepage'] .hero .flexslider .flex-direction-nav a:hover {
   opacity: 1;
