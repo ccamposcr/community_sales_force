@@ -1435,8 +1435,8 @@ th {
   text-indent: -9999px;
   color: transparent;
   font-size: 0;
-  width: 35px;
-  height: 122px;
+  width: 10%;
+  height: 208px;
   display: block;
   top: 38%;
   opacity: 0;
@@ -1449,11 +1449,13 @@ th {
 }
 .ae-content[data-page='homepage'] .hero .flexslider .flex-direction-nav a.flex-prev {
   background: url('../img/sprites/left-arrow-carousel.png') no-repeat;
-  left: 100px;
+  background-position: 50%;
+  left: 0px;
 }
 .ae-content[data-page='homepage'] .hero .flexslider .flex-direction-nav a.flex-next {
   background: url('../img/sprites/right-arrow-carousel.png') no-repeat;
-  right: 100px;
+  background-position: 50%;
+  right: 0px;
 }
 .ae-content[data-page='homepage'] .hero .flexslider .flex-control-nav {
   bottom: 17px;
