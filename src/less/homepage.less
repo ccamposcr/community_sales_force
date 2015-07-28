@@ -55,11 +55,11 @@
 				border: none;
 				height:384px;
 
-				&:hover{
+				/*&:hover{
 					.flex-direction-nav a{
 						opacity: 1;
 					}
-				}
+				}*/
 
 				.slides {					
 
@@ -144,9 +144,9 @@
 						top: 38%;
 						opacity: 0;
 
-						/*&:hover{
+						&:hover{
 							opacity: 1;
-						}*/
+						}
 
 						&:before{
 							content: none;
@@ -411,6 +411,12 @@
 
 				&.active {
 					color: #002663;
+					display: inline-block;
+
+					&:hover span.active{
+						.icn-sprite;
+						.arrow-right-aqua-blue;
+					}
 				}
 
 				span.active {

@@ -1,8 +1,13 @@
 $(window).load(function() {
     $('.flexslider').flexslider({
                                 pauseOnHover: true,
-                                animationLoop: false
+                                animationLoop: true
                             });
+    
+    $('.sliderTitle').on('hover', function(){
+       $('.flex-prev, .flex-next').attr('opacity',0);
+    });
+
     if (window.innerWidth > 920 && window.innerWidth < 1300)
     {
         $('.slides li .sliderTitle').css('font-size', window.innerWidth * 0.030 + 'px');
