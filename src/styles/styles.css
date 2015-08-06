@@ -811,7 +811,7 @@ th {
 .ae-content[data-page='article'] .content-container .column-right .section .ae-related-content .content-list li .title {
   text-transform: uppercase;
   color: #727272;
-  font-size: 10px;
+  font-size: 12px;
   margin: 15px 0;
   display: block;
   text-decoration: none;
@@ -832,7 +832,7 @@ th {
 }
 .ae-content[data-page='article'] .content-container .column-right .section .ae-related-content .content-list li .autor {
   color: #616064;
-  font-size: 10px;
+  font-size: 12px;
   margin-top: 6px;
   display: block;
 }
@@ -1490,7 +1490,6 @@ th {
   padding-bottom: 0;
 }
 .ae-content[data-page='homepage'] .articlePodContainer .articlePod {
-  width: 29%;
   display: inline-table;
   padding: 1% 4% 1% 0%;
   font-family: 'BentonSans Book';
