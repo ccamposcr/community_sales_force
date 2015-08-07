@@ -14,19 +14,14 @@ $(window).load(function() {
     };
 
     $('.articleExpanderButton').click(function (){
-    	//$('.articleExpander').slideToggle();
+    	$('.articleExpander').slideToggle();
         $('#FeaturedExpanderClose').toggle();
         $('#FeaturedExpanderOpen').toggle();
-        $('.articlePodContainer .column .articlePod:not(:nth-child(1))').slideToggle();
     });
 
-    if ($('.articlePodContainer .articlePod').length > 3)
+    if ($('.articleExpander .articlePod').length > 3)
     {
         $('.articleExpanderButton').show();
-        $('.articlePodContainer .column').each(function(){
-            $(this).width($(this).width());
-        });
-        $('.articlePodContainer .column .articlePod:not(:nth-child(1))').hide();
     } else {
         $('.articleExpanderButton').hide();
     };

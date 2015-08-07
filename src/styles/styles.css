@@ -1489,29 +1489,19 @@ th {
   padding-top: 25px;
   padding-bottom: 0;
 }
-.ae-content[data-page='homepage'] .articlePodContainer .sectionPod .column {
-  display: inline-table;
-  padding-right: 40px;
-  max-width: 30%;
-}
-.ae-content[data-page='homepage'] .articlePodContainer .sectionPod .column-3 {
-  padding-right: 0;
-}
 .ae-content[data-page='homepage'] .articlePodContainer .articlePod {
-  display: block;
-  padding: 1% 0 1% 0;
+  width: 29%;
+  display: inline-table;
+  padding: 1% 4% 1% 0%;
   font-family: 'BentonSans Book';
   margin-top: 12px;
   margin-bottom: 12px;
   color: #002663;
   cursor: pointer;
 }
-.ae-content[data-page='homepage'] .articlePodContainer .articlePod:not(:nth-child(1)) {
-  display: none;
-}
 .ae-content[data-page='homepage'] .articlePodContainer .articlePod .articlePodTitle {
   font-size: 18px;
-  min-height: 25px;
+  padding-right: 40px;
 }
 .ae-content[data-page='homepage'] .articlePodContainer .articlePod .articlePodTitle a:hover {
   color: #009bbb;
@@ -1523,7 +1513,7 @@ th {
   font-family: 'BentonSans Medium';
   font-weight: bold;
   font-size: 12px;
-  min-height: 25px;
+  padding-right: 40px;
 }
 .ae-content[data-page='homepage'] .articlePodContainer .articlePod .articleCategory a:hover {
   color: #009bbb;
