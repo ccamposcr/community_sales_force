@@ -204,21 +204,36 @@
 				padding-top:25px;
 				padding-bottom:0;
 			}
+
+			.sectionPod{
+				.column{
+					display: inline-table;
+					padding-right: 40px;
+					max-width: 30%;
+				}
+
+				.column-3{
+					padding-right: 0;
+				}
+			}
 			
 			.articlePod {				
-				//max-width: 29%;
-    			//min-width: 25%;
-				display: inline-table; 
-				padding:1% 4% 1% 0%;
+				display: block; 
+				padding:1% 0 1% 0;
 				font-family: @benton-book;
 				margin-top:12px;
 				margin-bottom:12px;
 				color:#002663;
-				cursor: pointer;				
+				cursor: pointer;		
+
+				&:not(:nth-child(1)){
+					display:none
+				}	
 
 				.articlePodTitle {
 					font-size:18px;
-					padding-right:40px;
+					min-height: 25px;
+					//padding-right:40px;
 					a{
 						&:hover {
 							color: #009bbb;
@@ -233,7 +248,8 @@
 					font-family: @benton-med;	
 					font-weight:bold;
 					font-size: 12px;
-					padding-right:40px;
+					min-height: 25px;
+					//padding-right:40px;
 
 					a {
 						&:hover {
