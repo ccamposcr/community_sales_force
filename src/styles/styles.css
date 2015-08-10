@@ -721,7 +721,7 @@ th {
 .ae-content[data-page='article'] .hero h2 {
   z-index: 21;
   position: absolute;
-  width: 70%;
+  width: 55%;
   bottom: 75px;
   text-align: left;
   font: 45px 'BentonSans Light', Arial, Helvetica;
@@ -1441,9 +1441,9 @@ th {
   top: 20px;
   opacity: 0;
   z-index: 999;
-}
-.ae-content[data-page='homepage'] .hero .flexslider .flex-direction-nav a:hover {
-  opacity: 1;
+  /*&:hover{
+							opacity: 1;
+						}*/
 }
 .ae-content[data-page='homepage'] .hero .flexslider .flex-direction-nav a:before {
   content: none;
