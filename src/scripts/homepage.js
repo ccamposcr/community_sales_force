@@ -60,7 +60,7 @@ var flexDirectionNavHover = function(){
             $('.flexslider .flex-direction-nav a').css('opacity', 0);
         }
         else{*/
-            console.log(e.clientX);
+            //console.log(e.clientX);
             if(e.clientX < slideWidth/2 && e.offsetY <= slideHeight ){
                 //console.log('PREV ' + e.offsetX+' offsetX < slideWidth/2 ' + slideWidth/2 +'   &&    ' + e.offsetY + ' offsetY <= ' + slideHeight + ' slideHeight');
                 $('.flexslider .flex-direction-nav a.flex-next').css('opacity', 0);
