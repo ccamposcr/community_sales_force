@@ -32,7 +32,7 @@
             $('.region-list .slickselect-option[data-value]').show();
             $('.region-list .slickselect-option[data-value="' + value + '"]').hide();
 
-            alue = $('select.team-list').val();
+            value = $('select.team-list').val();
             $('.team-list .slickselect-option[data-value]').show();
             $('.team-list .slickselect-option[data-value="' + value + '"]').hide();
 
