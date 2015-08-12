@@ -497,6 +497,7 @@ th {
 .ae-content {
   width: 100%;
   min-width: 965px;
+  position: relative;
 }
 .ae-content .content-container {
   margin: 0 auto;
@@ -1491,9 +1492,9 @@ th {
   padding-bottom: 0;
 }
 .ae-content[data-page='homepage'] .articlePodContainer .articlePod {
-  width: 29%;
+  width: 32%;
   display: inline-table;
-  padding: 1% 4% 1% 0%;
+  padding: 10px 0 10px 0;
   font-family: 'BentonSans Book';
   margin-top: 12px;
   margin-bottom: 12px;
