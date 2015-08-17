@@ -696,13 +696,14 @@ th {
   border-bottom: 6px solid #009bbb;
 }
 .ae-content[data-page='article'] .hero.empty {
-  min-height: 265px;
+  min-height: initial;
+  height: 265px;
 }
 .ae-content[data-page='article'] .hero.empty .hero-img {
   max-height: 265px;
 }
 .ae-content[data-page='article'] .hero.empty h2 {
-  bottom: 59px;
+  bottom: inherit;
 }
 .ae-content[data-page='article'] .hero .hero-img {
   overflow: hidden;
@@ -1492,7 +1493,7 @@ th {
   padding-bottom: 0;
 }
 .ae-content[data-page='homepage'] .articlePodContainer .articlePod {
-  width: 32%;
+  width: 33%;
   display: inline-table;
   padding: 10px 0 10px 0;
   font-family: 'BentonSans Book';
