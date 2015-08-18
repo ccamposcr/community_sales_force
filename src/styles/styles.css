@@ -702,6 +702,9 @@ th {
 .ae-content[data-page='article'] .hero.empty .hero-img {
   max-height: 265px;
 }
+.ae-content[data-page='article'] .hero.empty h2 {
+  top: 34%;
+}
 .ae-content[data-page='article'] .hero .hero-img {
   overflow: hidden;
   width: 100%;
