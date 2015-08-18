@@ -108,8 +108,10 @@
 $(document).on("ready", function(){
    
     var articleNoHeroFunctions = function(){
-        var _hero = $('.hero.empty'),
-            heroHeight = _hero.height(),
+        var _hero = $('.hero.empty');
+        _hero.find('h2').css('bottom','inherit');
+
+        var heroHeight = _hero.height(),
             textheight = _hero.find('h2').height(),
             searchHeight = _hero.find('.ae-search').height(),
             value = 0;
