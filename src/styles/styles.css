@@ -703,7 +703,7 @@ th {
   max-height: 265px;
 }
 .ae-content[data-page='article'] .hero.empty h2 {
-  top: 34%;
+  top: 41.5%;
 }
 .ae-content[data-page='article'] .hero .hero-img {
   overflow: hidden;
@@ -780,6 +780,7 @@ th {
   text-transform: uppercase;
   color: #4d4f53;
   padding: 10px 0;
+  border-bottom: 1px solid #bbbbbb;
 }
 .ae-content[data-page='article'] .content-container .column-right .section {
   background: #e6e7e8;
