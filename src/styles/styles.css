@@ -1816,207 +1816,60 @@ th {
   margin: 0 5px;
   display: inline-block;
 }
-.ae-content[data-page='help'] .content-container .column-right {
-  display: inline-block;
-  vertical-align: top;
-  width: 22%;
-  padding-left: 2%;
-  margin-top: 2%;
-}
-.ae-content[data-page='help'] .content-container .column-right .label {
-  display: block;
-  font: bold 12px 'Arial', sans-serif;
-  text-transform: uppercase;
-  color: #4d4f53;
-  padding: 10px 0;
-  border-bottom: 1px solid #bbbbbb;
-}
-.ae-content[data-page='help'] .content-container .column-right .section {
-  background: #e6e7e8;
-  padding: 5px 25% 5px 5%;
-  margin-bottom: 20px;
-  /*.ae-trending-topics{
-						.topics-list li{
-							font: bold 12px 'Arial', sans-serif;
-							color: #4d4f53;
-							margin-bottom: 10px;
-
-							.topic-link{
-								text-decoration: none;
-								color: #4d4f53;
-							}
-						}
-					}*/
-}
-.ae-content[data-page='help'] .content-container .column-right .section hr {
-  width: 96%;
-  margin-right: 4%;
-}
-.ae-content[data-page='help'] .content-container .column-right .section .ae-related-content .content-list li {
-  border-bottom: 1px solid #bbbbbb;
-  padding-bottom: 20px;
-  margin-left: 0;
-}
-.ae-content[data-page='help'] .content-container .column-right .section .ae-related-content .content-list li:last-child {
-  border-bottom: none;
-}
-.ae-content[data-page='help'] .content-container .column-right .section .ae-related-content .content-list li .title {
-  text-transform: uppercase;
-  color: #727272;
-  font-size: 12px;
-  margin: 15px 0;
-  display: block;
-  text-decoration: none;
-  font-weight: bold;
-  margin: 10px 0;
-}
-.ae-content[data-page='help'] .content-container .column-right .section .ae-related-content .content-list li .desc {
-  width: 100%;
-  font-size: 130%;
-  font-weight: lighter;
-  display: block;
-  text-decoration: none;
-  color: #2d2d2e;
-}
-.ae-content[data-page='help'] .content-container .column-right .section .ae-related-content .content-list li .desc:hover {
-  text-decoration: none;
-  color: #009bbb;
-}
-.ae-content[data-page='help'] .content-container .column-right .section .ae-related-content .content-list li .autor {
-  color: #616064;
-  font-size: 12px;
-  margin-top: 6px;
-  display: block;
-}
 .ae-content[data-page='help'] .content-container .main-content {
-  width: 75%;
-  display: inline-block;
-}
-.ae-content[data-page='help'] .content-container .main-content .author {
-  margin: 20px 0 35px;
-}
-.ae-content[data-page='help'] .content-container .main-content .author img {
-  border: 3px solid #009bbb;
-}
-.ae-content[data-page='help'] .content-container .main-content .author .article-info {
-  display: inline-block;
-  vertical-align: bottom;
-  margin-left: 5px;
-}
-.ae-content[data-page='help'] .content-container .main-content .author .article-info p {
-  margin-bottom: 0;
-}
-.ae-content[data-page='help'] .content-container .main-content .author .article-info p.pub {
-  text-transform: uppercase;
-  font: 12px 'BentonSans Light';
-}
-.ae-content[data-page='help'] .content-container .main-content .author .article-info p.author {
-  font: 16px 'BentonSans Light';
-  margin-top: 0;
-}
-.ae-content[data-page='help'] .content-container .main-content .author .article-info p.author span,
-.ae-content[data-page='help'] .content-container .main-content .author .article-info p.author a {
-  font-family: 'BentonSans Medium';
-  text-decoration: underline;
-}
-.ae-content[data-page='help'] .content-container .main-content .article {
-  /* reset the bullet styles */
-}
-.ae-content[data-page='help'] .content-container .main-content .article p {
-  font: 14px/25px 'BentonSans Book';
   width: 100%;
-  margin: 20px 0;
+  display: block;
 }
-.ae-content[data-page='help'] .content-container .main-content .article ul {
-  list-style: disc;
-  margin-left: 1.2em;
-  margin-bottom: 1.5em;
+.ae-content[data-page='help'] .content-container .main-content h2.categoryBlockTitle {
+  font-family: 'BentonSans Book';
+  font-size: 38px;
+  padding-top: 25px;
+  padding-bottom: 0;
+  color: #5f5f5f;
 }
-.ae-content[data-page='help'] .content-container .main-content .article ol {
-  list-style: decimal;
-  margin-left: 1.5em;
-  margin-bottom: 1.5em;
+.ae-content[data-page='help'] .content-container .main-content #contribute-section {
+  padding: 40px 0;
+  border-top: 1px solid #9c9c9c;
+  border-bottom: 1px solid #9c9c9c;
+  float: left;
+  width: 100%;
 }
-.ae-content[data-page='help'] .content-container .main-content .article table td {
-  padding: 5px;
+.ae-content[data-page='help'] .content-container .main-content #contribute-section h2.categoryBlockTitle {
+  width: 100%;
+  float: left;
+  padding-top: 0;
+  margin-bottom: 45px;
 }
-.ae-content[data-page='help'] .content-container .main-content .like {
-  color: #004db0;
-  font: 11px 'BentonSans Medium';
+.ae-content[data-page='help'] .content-container .main-content #contribute-section a.blue-box {
+  display: block;
+  width: 24%;
+  height: 235px;
+  padding: 3% 3% 0 3%;
+  float: left;
+  background-color: #1797c1;
+  text-decoration: none;
 }
-.ae-content[data-page='help'] .content-container .main-content .like > * {
-  display: inline-block;
-  margin: -2px 2px;
+.ae-content[data-page='help'] .content-container .main-content #contribute-section a.blue-box .box-title {
+  font-family: 'BentonSans Light', Arial, Helvetica;
+  color: #FFF;
+  text-align: center;
+  display: block;
+  margin-bottom: 30px;
+  font-size: 22px;
 }
-.ae-content[data-page='help'] .content-container .main-content .like:hover .icn-like {
-  background: url('../img/sprites/icon-like-over.png') no-repeat;
-}
-.ae-content[data-page='help'] .content-container .main-content .like:hover .icn-unlike {
-  background: url('../img/sprites/icon-like-over.png') no-repeat;
-}
-.ae-content[data-page='help'] .content-container .main-content .like .icn-like {
-  background: url('../img/sprites/icon-like.png') no-repeat;
-  width: 16px;
-  height: 16px;
-  display: inline-block;
-  margin-right: 4px;
-}
-.ae-content[data-page='help'] .content-container .main-content .like .icn-unlike {
-  background: url('../img/sprites/icon-like-gray.png') no-repeat;
-  width: 16px;
-  height: 16px;
-  display: inline-block;
-  margin-right: 4px;
-}
-.ae-content[data-page='help'] .content-container .main-content .like .count {
-  color: #616469;
-  font-family: 'BentonSans Light';
-}
-.ae-content[data-page='help'] .content-container .main-content .like .count:before {
-  content: '[';
-}
-.ae-content[data-page='help'] .content-container .main-content .like .count:after {
-  content: ']';
-}
-.ae-content[data-page='help'] .content-container .main-content .downloads {
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-.ae-content[data-page='help'] .content-container .main-content .downloads h2 {
-  color: #616469;
-  text-transform: uppercase;
+.ae-content[data-page='help'] .content-container .main-content #contribute-section a.blue-box .box-content {
+  font-family: 'BentonSans Light', Arial, Helvetica;
+  color: #FFF;
+  text-align: center;
   font-size: 16px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  line-height: 24px;
 }
-.ae-content[data-page='help'] .content-container .main-content .downloads .download-rule {
-  height: 1px;
-  width: 67px;
-  background-color: #4d4f53;
-  margin-bottom: 20px;
+.ae-content[data-page='help'] .content-container .main-content #contribute-section a.blue-box:hover {
+  background-color: #d0d1d4;
+  text-decoration: none;
 }
-.ae-content[data-page='help'] .content-container .main-content .downloads a {
-  display: table;
-  color: #002663;
-}
-.ae-content[data-page='help'] .content-container .main-content .downloads a:hover {
-  color: #009bbb;
-}
-.ae-content[data-page='help'] .content-container .main-content .downloads a:hover .icon-download {
-  background: url("../img/sprites/icon-download-over.gif");
-}
-.ae-content[data-page='help'] .content-container .main-content .downloads a .icon-download {
-  height: 11px;
-  width: 11px;
-  background: url("../img/sprites/icon-download.gif");
-  display: inline-block;
-  margin-right: 7px;
-}
-.ae-content[data-page='help'] .content-container .main-content .downloads a .downloadLink {
-  text-decoration: underline;
-  font-family: 'BentonSans Medium';
-  display: inline-block;
-  margin-bottom: 5px;
+.ae-content[data-page='help'] .content-container .main-content #contribute-section a.center-blue-box {
+  margin: 0 5%;
 }
 .ae-content[data-page='help'] .chatter-container {
   padding-top: 50px;
@@ -2029,6 +1882,11 @@ th {
   position: relative;
   z-index: 8;
   overflow: hidden;
+}
+.ae-content[data-page='help'] .chatter-container h4.categoryBlockTitle {
+  color: #5f5f5f;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 .ae-content[data-page='help'] .chatter-container .chatter-table {
   width: 70%;
@@ -2093,27 +1951,6 @@ th {
 .ae-content[data-page='help'] .chatter-container .column-right .chatterContent {
   width: 100%;
   min-height: 250px;
-}
-.ae-content[data-page='help'] .topics {
-  margin-bottom: 30px;
-  margin-top: 0;
-}
-.ae-content[data-page='help'] .topics a {
-  text-decoration: none;
-  color: #4b4d51;
-}
-.ae-content[data-page='help'] .topics a:hover {
-  text-decoration: none;
-  color: #015ba7;
-}
-.ae-content[data-page='help'] .topics a:visited {
-  color: #4b4d51;
-}
-.ae-content[data-page='help'] .topics a:active {
-  color: #4b4d51;
-}
-.ae-content[data-page='help'] .topics a:last-child .comma {
-  display: none;
 }
 .ext-ie9 b,
 .ext-ie9 strong {

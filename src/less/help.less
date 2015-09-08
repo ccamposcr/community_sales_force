@@ -100,253 +100,68 @@
 				}
 			}
 
-			.column-right{
-				display: inline-block;
-  				vertical-align: top;
- 				width: 22%;
-  				padding-left: 2%;
-  				margin-top: 2%;
-
-  				.label{
-  					display: block;
-					font: bold 12px 'Arial', sans-serif;
-					text-transform: uppercase;
-					color: #4d4f53;
-					padding: 10px 0;
-					border-bottom: 1px solid #bbbbbb;
-  				}
-
- 				.section{
-			    	background:@grey-lightest;
-			    	padding: 5px 25% 5px 5%;
-			    	margin-bottom: 20px;
-
-			    	hr{
-			    		width:96%;
-			    		margin-right:4%;
-					}
-
-					.ae-related-content{
-						.content-list li{
-
-							border-bottom: 1px solid #bbbbbb;
-							padding-bottom: 20px;
-							margin-left: 0;
-
-							&:last-child{
-								border-bottom: none;
-							}
-
-							.title{
-								text-transform: uppercase;
-								color: #727272;
-								font-size: 12px;
-								margin: 15px 0;
-  								display: block;
-  								text-decoration: none;
-  								font-weight: bold;
-  								margin: 10px 0;
-							}
-
-							.desc{
-    							width: 100%;
-    							font-size: 130%;
-  								font-weight: lighter;
-  								display: block;
-  								text-decoration: none;
-  								color: #2d2d2e;
-
-  								&:hover{
-  									text-decoration: none;
-  									color: #009bbb; 
-  								}
-							}
-
-							.autor{
-								color: #616064;
-							    font-size: 12px;
-							    margin-top: 6px;
-							    display: block;
-							}
-
-						}
-					}
-
-					/*.ae-trending-topics{
-						.topics-list li{
-							font: bold 12px 'Arial', sans-serif;
-							color: #4d4f53;
-							margin-bottom: 10px;
-
-							.topic-link{
-								text-decoration: none;
-								color: #4d4f53;
-							}
-						}
-					}*/
-			    }
-			}
-				
 			.main-content {
-				width:75%;
-				display: inline-block;
-				
-				.author{
+				width: 100%;
+				display: block;
 
-					margin: 20px 0 35px;
-
-					img{
-						border:3px solid @teal;
-					}
-
-					.article-info{
-
-						display: inline-block;
-						vertical-align: bottom;
-						margin-left:5px;
-
-						p{
-							margin-bottom:0;
-							&.pub {
-								text-transform: uppercase;
-								font: 12px @benton-light;
-							}
-							&.author {
-								font: 16px @benton-light;
-								margin-top:0;
-
-								span, a{
-									font-family: @benton-med;
-									text-decoration: underline;
-								}
-							}
-						}
-					}
+				h2.categoryBlockTitle{
+					font-family: 'BentonSans Book';
+    				font-size: 38px;
+    				padding-top: 25px;
+    				padding-bottom: 0;
+    				color: #5f5f5f;
 				}
 
-				.article{
+				#contribute-section{
 
-					p{
-						font:14px/25px @benton-book;
-						width:100%;
-						margin:20px 0;
+					padding: 40px 0;
+					border-top: 1px solid #9c9c9c;
+					border-bottom: 1px solid #9c9c9c;
+					float: left;
+					width: 100%;
+
+					h2.categoryBlockTitle{
+						width: 100%;
+						float: left;
+						padding-top: 0;
+						margin-bottom: 45px;
 					}
 
-					/* reset the bullet styles */
-					ul {
-						list-style: disc;
-						margin-left: 1.2em;
-						margin-bottom: 1.5em;
-					}
+					a.blue-box{
+						display: block;
+						width: 24%;
+						height: 235px;
+						padding: 3% 3% 0 3%;
+						float: left;
+						background-color: #1797c1;
+						text-decoration: none;
 
-					ol {
-						list-style:  decimal;
-						margin-left: 1.5em;
-						margin-bottom: 1.5em;
-					}
-
-					table {
-
-						td {
-							padding:5px;
-						}
-					}
-				}
-				.like{
-					color:#004db0;
-					font:11px @benton-med;
-					& > *{
-						display: inline-block;
-						margin: -2px 2px;
-					}
-
-					&:hover {
-						.icn-like {
-							background: url( '../img/sprites/icon-like-over.png' ) no-repeat;	
+						.box-title{
+							font-family: 'BentonSans Light', Arial, Helvetica;
+							color: #FFF;
+							text-align: center;
+							display: block;
+							margin-bottom: 30px;
+							font-size: 22px;
 						}
 
-						.icn-unlike {
-							background: url( '../img/sprites/icon-like-over.png' ) no-repeat;	
+						.box-content{
+							font-family: 'BentonSans Light', Arial, Helvetica;
+							color: #FFF;
+							text-align: center;
+							font-size: 16px;
+    						line-height: 24px;
 						}
 					}
 
-					.icn-like{
-						background: url( '../img/sprites/icon-like.png' ) no-repeat;
-						width: 16px;
-						height: 16px;
-						display: inline-block;
-  						margin-right: 4px;
-					}
-					
-					.icn-unlike {
-						background: url( '../img/sprites/icon-like-gray.png' ) no-repeat;
-						width:16px;
-						height: 16px;
-						display: inline-block;
-  						margin-right: 4px;
+					a.blue-box:hover{
+						background-color: @grey-lighter;
+						text-decoration: none;
 					}
 
-					.count{
-						color:@grey-fonts;
-						font-family: @benton-light; 
-
-						&:before{
-							content: '[';
-						}
-						&:after{
-							content: ']';
-						}
+					a.center-blue-box{
+						margin: 0 5%;
 					}
-				}
-
-				.downloads {
-					margin-top:40px;
-					margin-bottom:40px;
-
-					h2 {
-						color:@grey-fonts;
-						text-transform: uppercase;
-						font-size:16px;
-						margin-top:20px;
-						margin-bottom:20px;
-					}
-
-					.download-rule {
-						height:1px;
-						width:67px;
-						background-color: @grey;
-						margin-bottom:20px;
-					}
-
-					a {
-						display:table;
-						color: @dark-blue;
-
-
-						&:hover {
-							.icon-download {
-								background: url("../img/sprites/icon-download-over.gif");
-							}
-							color: @teal;
-						}						
-
-						.icon-download {
-							height:11px;
-							width:11px;						
-							background: url("../img/sprites/icon-download.gif");
-							display:inline-block;
-							margin-right:7px;
-
-							
-						}
-
-						.downloadLink {
-							text-decoration: underline;
-							font-family: @benton-med;
-							display:inline-block;
-							margin-bottom:5px;
-						}
-					}					
 				}
 			}
 		}
@@ -361,6 +176,12 @@
 			position:relative;
 			z-index:8;
 			overflow:hidden;
+
+			h4.categoryBlockTitle{
+				color: #5f5f5f;
+				font-weight: bold;
+				text-transform: uppercase;
+			}
 
 			.chatter-table {
 				width:70%;
@@ -437,33 +258,5 @@
 			}
 			
 		}
-
-		.topics{
-			margin-bottom: 30px;
-			margin-top: 0;
-
-			a{
-				text-decoration: none;
-				color: #4b4d51;
-
-				&:hover{
-					text-decoration: none;
-					color: #015ba7;
-				}
-
-				&:visited{
-					color: #4b4d51;
-				}
-
-				&:active{
-					color: #4b4d51;
-				}
-
-				&:last-child .comma{
-					display: none;
-				}
-			}
-		}
 	}
-
 }
