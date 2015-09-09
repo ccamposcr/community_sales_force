@@ -13,16 +13,6 @@
 				.hero-img {
 					max-height:265px;
 				}
-
-				h2{
-					display: none;
-					height: 50%;
-    				top: 0;
-    				bottom: 0;
-    				margin-top: auto;
-    				margin-bottom: auto;
-    				padding-top: 2.5%;
-				}
 			}
 
 			.hero-img {
@@ -43,15 +33,14 @@
 			}
 
 			h2 {
-				z-index:21;
-				position: absolute;
-				width: 55%;
-				bottom: 75px;
-				text-align: left;
-				font: 45px 'BentonSans Light', Arial, Helvetica;
-				color: #4b4b4b;
-				margin-left: 10%;
-				top:inherit;
+				z-index: 21;
+			    position: absolute;
+			    font-family: @benton-light;
+			    font-size: 45px;
+			    color: #FFF;
+			    top: 32%;
+			   	width: 100%;
+			   	text-align: center;
 
 				&.light {
 					color:#fff;
@@ -61,6 +50,21 @@
 					color:#000;
 				}
 			}
+
+			h3{
+				font-family: @benton-light;
+			    color: #FFF;
+			    position: absolute;
+			    top: 55%;
+			    left: 0;
+			    right: 0;
+			    margin: 0 auto;
+			    font-size: 20px;
+			    display: block;
+			    width: 32%;
+			    line-height: 135%;
+			    text-align: center;
+			}
 		}
 
 		.content-container{
@@ -68,16 +72,29 @@
 			padding: 0 2%;
 
 			.breadcrumbs{
-				font-family: 'BentonSans Medium';
+				font-family: @benton-med;
 				font-size:12px;
 				color:@grey-fonts;
 				text-transform: uppercase;
+				margin: 20px 0;
 
 				a{
 
 					text-decoration: underline;
 					margin: 0 5px;
 					display: inline-block;
+					color: #4b4d51;
+					text-decoration: none;
+					font-size: 12px;
+
+					&.need-help{
+						float: right;
+					}
+
+					&:hover{
+						color: #009bbb;
+						text-decoration: none;
+					}
 					
 
 					&.icn-home{
@@ -104,53 +121,62 @@
 				width: 100%;
 				display: block;
 
-				h2.categoryBlockTitle{
-					font-family: 'BentonSans Book';
-    				font-size: 38px;
-    				padding-top: 25px;
-    				padding-bottom: 0;
-    				color: #5f5f5f;
-				}
-
-				#contribute-section{
-
+				.help-section{
 					padding: 40px 0;
 					border-top: 1px solid #9c9c9c;
-					border-bottom: 1px solid #9c9c9c;
 					float: left;
 					width: 100%;
 
+					.link{
+						text-decoration: none;
+						color: #1797c1;
+						&:hover{
+							text-decoration: none;
+							color: #009bbb;
+						}
+					}
+
 					h2.categoryBlockTitle{
-						width: 100%;
+						font-family: @benton-light;
+	    				font-size: 38px;
+	    				padding-top: 25px;
+	    				padding-bottom: 0;
+	    				color: #5f5f5f;
+	    				width: 100%;
 						float: left;
 						padding-top: 0;
 						margin-bottom: 45px;
 					}
+				}
+
+				#contribute-section{
 
 					a.blue-box{
 						display: block;
 						width: 24%;
-						height: 235px;
+						height: 265px;
 						padding: 3% 3% 0 3%;
 						float: left;
 						background-color: #1797c1;
 						text-decoration: none;
 
 						.box-title{
-							font-family: 'BentonSans Light', Arial, Helvetica;
+							font-family: @benton-light;
 							color: #FFF;
 							text-align: center;
 							display: block;
-							margin-bottom: 30px;
-							font-size: 22px;
+							padding-bottom: 20px;
+							font-size: 20px;
+							border-bottom: 1px solid #FFF;
 						}
 
 						.box-content{
-							font-family: 'BentonSans Light', Arial, Helvetica;
+							font-family: @benton-light;
 							color: #FFF;
 							text-align: center;
-							font-size: 16px;
-    						line-height: 24px;
+							font-size: 18px;
+    						line-height: 130%;
+    						margin-top: 20px;
 						}
 					}
 
@@ -161,6 +187,79 @@
 
 					a.center-blue-box{
 						margin: 0 5%;
+					}
+				}
+
+				#solve-a-problem-section{
+					p{
+						font-size: 140%;
+
+					}
+				}
+
+				.carousels-section{
+					position: relative;
+					width: 100%;
+					float: left;
+
+					.flexslider{
+						display: block;
+						width: 33%;
+						float: left;
+
+						ul{
+							li{
+								margin: 0;
+								padding: 0;
+							}
+						}
+
+						.slides{
+							h5{
+								font-size: 14px;
+								font-family: @benton-med;
+								color: #4b4d51;
+							}
+
+							ul{
+								margin-top: 30px;
+
+								li{
+									height: 50px;
+
+									a{
+										font-family: @benton-light;
+										color: #4b4d51;
+										text-decoration: none;
+										font-size: 20px;
+									}
+								}
+							}
+						}
+
+						.flex-control-paging{
+							position: absolute;
+							bottom: -25px;
+							margin-left: 40px;
+
+							li{
+								display: inline-table;
+								margin-right: 10px;
+							}
+						}
+
+						.flex-direction-nav{
+							position: absolute;
+							bottom: -25px;
+
+							li{
+								display: inline-table;
+
+								&.flex-nav-next{
+									margin-left: 100px;
+								}
+							}
+						}
 					}
 				}
 			}
@@ -181,6 +280,7 @@
 				color: #5f5f5f;
 				font-weight: bold;
 				text-transform: uppercase;
+				font-size: 14px;
 			}
 
 			.chatter-table {

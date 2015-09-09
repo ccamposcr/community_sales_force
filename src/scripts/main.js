@@ -143,3 +143,21 @@
     });
 
 }(jQuery));
+
+(function ($) {
+
+    var helpPageFunctions  = {
+        init: function(){
+           $('.flexslider').flexslider({
+                                pauseOnHover: true,
+                                animationLoop: true
+                            });
+        }
+    }
+
+    $(document).on("ready", function(){
+        if( $('.ae-content').attr('data-page') === 'help' ){
+            helpPageFunctions.init();
+        }
+    });
+}(jQuery));

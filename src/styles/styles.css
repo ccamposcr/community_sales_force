@@ -1745,15 +1745,6 @@ th {
 .ae-content[data-page='help'] .hero.empty .hero-img {
   max-height: 265px;
 }
-.ae-content[data-page='help'] .hero.empty h2 {
-  display: none;
-  height: 50%;
-  top: 0;
-  bottom: 0;
-  margin-top: auto;
-  margin-bottom: auto;
-  padding-top: 2.5%;
-}
 .ae-content[data-page='help'] .hero .hero-img {
   overflow: hidden;
   width: 100%;
@@ -1772,19 +1763,32 @@ th {
 .ae-content[data-page='help'] .hero h2 {
   z-index: 21;
   position: absolute;
-  width: 55%;
-  bottom: 75px;
-  text-align: left;
-  font: 45px 'BentonSans Light', Arial, Helvetica;
-  color: #4b4b4b;
-  margin-left: 10%;
-  top: inherit;
+  font-family: 'BentonSans Light';
+  font-size: 45px;
+  color: #FFF;
+  top: 32%;
+  width: 100%;
+  text-align: center;
 }
 .ae-content[data-page='help'] .hero h2.light {
   color: #fff;
 }
 .ae-content[data-page='help'] .hero h2.dark {
   color: #000;
+}
+.ae-content[data-page='help'] .hero h3 {
+  font-family: 'BentonSans Light';
+  color: #FFF;
+  position: absolute;
+  top: 55%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  font-size: 20px;
+  display: block;
+  width: 32%;
+  line-height: 135%;
+  text-align: center;
 }
 .ae-content[data-page='help'] .content-container {
   width: 80%;
@@ -1795,11 +1799,22 @@ th {
   font-size: 12px;
   color: #616469;
   text-transform: uppercase;
+  margin: 20px 0;
 }
 .ae-content[data-page='help'] .content-container .breadcrumbs a {
   text-decoration: underline;
   margin: 0 5px;
   display: inline-block;
+  color: #4b4d51;
+  text-decoration: none;
+  font-size: 12px;
+}
+.ae-content[data-page='help'] .content-container .breadcrumbs a.need-help {
+  float: right;
+}
+.ae-content[data-page='help'] .content-container .breadcrumbs a:hover {
+  color: #009bbb;
+  text-decoration: none;
 }
 .ae-content[data-page='help'] .content-container .breadcrumbs a.icn-home {
   background: url('../img/sprites/icon-home.png') no-repeat;
@@ -1820,21 +1835,26 @@ th {
   width: 100%;
   display: block;
 }
-.ae-content[data-page='help'] .content-container .main-content h2.categoryBlockTitle {
-  font-family: 'BentonSans Book';
+.ae-content[data-page='help'] .content-container .main-content .help-section {
+  padding: 40px 0;
+  border-top: 1px solid #9c9c9c;
+  float: left;
+  width: 100%;
+}
+.ae-content[data-page='help'] .content-container .main-content .help-section .link {
+  text-decoration: none;
+  color: #1797c1;
+}
+.ae-content[data-page='help'] .content-container .main-content .help-section .link:hover {
+  text-decoration: none;
+  color: #009bbb;
+}
+.ae-content[data-page='help'] .content-container .main-content .help-section h2.categoryBlockTitle {
+  font-family: 'BentonSans Light';
   font-size: 38px;
   padding-top: 25px;
   padding-bottom: 0;
   color: #5f5f5f;
-}
-.ae-content[data-page='help'] .content-container .main-content #contribute-section {
-  padding: 40px 0;
-  border-top: 1px solid #9c9c9c;
-  border-bottom: 1px solid #9c9c9c;
-  float: left;
-  width: 100%;
-}
-.ae-content[data-page='help'] .content-container .main-content #contribute-section h2.categoryBlockTitle {
   width: 100%;
   float: left;
   padding-top: 0;
@@ -1843,26 +1863,28 @@ th {
 .ae-content[data-page='help'] .content-container .main-content #contribute-section a.blue-box {
   display: block;
   width: 24%;
-  height: 235px;
+  height: 265px;
   padding: 3% 3% 0 3%;
   float: left;
   background-color: #1797c1;
   text-decoration: none;
 }
 .ae-content[data-page='help'] .content-container .main-content #contribute-section a.blue-box .box-title {
-  font-family: 'BentonSans Light', Arial, Helvetica;
+  font-family: 'BentonSans Light';
   color: #FFF;
   text-align: center;
   display: block;
-  margin-bottom: 30px;
-  font-size: 22px;
+  padding-bottom: 20px;
+  font-size: 20px;
+  border-bottom: 1px solid #FFF;
 }
 .ae-content[data-page='help'] .content-container .main-content #contribute-section a.blue-box .box-content {
-  font-family: 'BentonSans Light', Arial, Helvetica;
+  font-family: 'BentonSans Light';
   color: #FFF;
   text-align: center;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 130%;
+  margin-top: 20px;
 }
 .ae-content[data-page='help'] .content-container .main-content #contribute-section a.blue-box:hover {
   background-color: #d0d1d4;
@@ -1870,6 +1892,59 @@ th {
 }
 .ae-content[data-page='help'] .content-container .main-content #contribute-section a.center-blue-box {
   margin: 0 5%;
+}
+.ae-content[data-page='help'] .content-container .main-content #solve-a-problem-section p {
+  font-size: 140%;
+}
+.ae-content[data-page='help'] .content-container .main-content .carousels-section {
+  position: relative;
+  width: 100%;
+  float: left;
+}
+.ae-content[data-page='help'] .content-container .main-content .carousels-section .flexslider {
+  display: block;
+  width: 33%;
+  float: left;
+}
+.ae-content[data-page='help'] .content-container .main-content .carousels-section .flexslider ul li {
+  margin: 0;
+  padding: 0;
+}
+.ae-content[data-page='help'] .content-container .main-content .carousels-section .flexslider .slides h5 {
+  font-size: 14px;
+  font-family: 'BentonSans Medium';
+  color: #4b4d51;
+}
+.ae-content[data-page='help'] .content-container .main-content .carousels-section .flexslider .slides ul {
+  margin-top: 30px;
+}
+.ae-content[data-page='help'] .content-container .main-content .carousels-section .flexslider .slides ul li {
+  height: 50px;
+}
+.ae-content[data-page='help'] .content-container .main-content .carousels-section .flexslider .slides ul li a {
+  font-family: 'BentonSans Light';
+  color: #4b4d51;
+  text-decoration: none;
+  font-size: 20px;
+}
+.ae-content[data-page='help'] .content-container .main-content .carousels-section .flexslider .flex-control-paging {
+  position: absolute;
+  bottom: -25px;
+  margin-left: 40px;
+}
+.ae-content[data-page='help'] .content-container .main-content .carousels-section .flexslider .flex-control-paging li {
+  display: inline-table;
+  margin-right: 10px;
+}
+.ae-content[data-page='help'] .content-container .main-content .carousels-section .flexslider .flex-direction-nav {
+  position: absolute;
+  bottom: -25px;
+}
+.ae-content[data-page='help'] .content-container .main-content .carousels-section .flexslider .flex-direction-nav li {
+  display: inline-table;
+}
+.ae-content[data-page='help'] .content-container .main-content .carousels-section .flexslider .flex-direction-nav li.flex-nav-next {
+  margin-left: 100px;
 }
 .ae-content[data-page='help'] .chatter-container {
   padding-top: 50px;
@@ -1887,6 +1962,7 @@ th {
   color: #5f5f5f;
   font-weight: bold;
   text-transform: uppercase;
+  font-size: 14px;
 }
 .ae-content[data-page='help'] .chatter-container .chatter-table {
   width: 70%;
