@@ -41,6 +41,17 @@
 
 	    			.searchInput {
 				    	width:100%;
+				    	position: relative;
+				    	padding-right: 20px;
+
+				    	&:after{
+				    		content: '.';
+						    position: absolute;
+						    height: 46px;
+						    width: 1px;
+						    background-color: #fff;
+						    right: 0;
+				    	}
 
 				    	td {
 				    		padding-left:10px;
@@ -104,20 +115,21 @@
 
 					.button {
 						position: relative;
-						float: left;
-						padding:12px 3% 12px 55px;
-						border: 1px solid @grey-fonts;
-						font: 16px @benton-book;
-						color:@grey-fonts;
-						min-height: 18px;
-						background: @grey-lightest;
-						width:75px;
-						margin-left:17px;
-						margin-right:-5px;
-						text-decoration: none;
+					    float: left;
+					    padding: 12px 0 12px 0;
+					    border: 1px solid #616469;
+					    font: 16px 'BentonSans Book';
+					    color: #464749;
+					    min-height: 18px;
+					    background: #efefef;
+					    width: 125px;
+					    margin-left: 17px;
+					    margin-right: -5px;
+					    text-decoration: none;
+					    text-align: center;
 						
 						&:hover {
-						   	background-color: #b4b4b4;
+						   	background-color: #d1d3d5;
 
 						   	.icn-profile {
 						   		background-position: -38px -175px;
