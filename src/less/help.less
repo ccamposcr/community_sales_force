@@ -1,6 +1,7 @@
 .ae-content{ 
 
 	&[data-page='help']{
+		font-size: 16px;
 
 		.hero {
 			min-height: 384px;
@@ -59,7 +60,7 @@
 			    left: 0;
 			    right: 0;
 			    margin: 0 auto;
-			    font-size: 20px;
+			    font-size: 1.250em;
 			    display: block;
 			    width: 32%;
 			    line-height: 135%;
@@ -90,6 +91,11 @@
 				a{
 					&.need-help{
 						float: right;
+
+						span{
+							position: relative;
+    						top: -1px;
+						}
 					}
 
 					&:hover{
@@ -139,8 +145,7 @@
 
 					h2.categoryBlockTitle{
 						font-family: @benton-light;
-	    				font-size: 38px;
-	    				padding-top: 25px;
+	    				font-size: 2.375em;
 	    				padding-bottom: 0;
 	    				color: #5f5f5f;
 	    				width: 100%;
@@ -155,7 +160,7 @@
 					a.blue-box{
 						display: block;
 						width: 24%;
-						height: 265px;
+						height: 16.563em;
 						padding: 3% 3% 0 3%;
 						float: left;
 						background-color: #1797c1;
@@ -167,7 +172,7 @@
 							text-align: center;
 							display: block;
 							padding-bottom: 20px;
-							font-size: 28px;
+							font-size: 1.750em;
 							border-bottom: 1px solid #FFF;
 						}
 
@@ -175,7 +180,7 @@
 							font-family: @benton-light;
 							color: #FFF;
 							text-align: center;
-							font-size: 22px;
+							font-size: 1.375em;
     						line-height: 130%;
     						margin-top: 20px;
 						}
@@ -188,6 +193,7 @@
 						.box-title{
 							color: #06a7cc;
 							border-bottom: 1px solid #06a7cc;
+							margin-right: -10px;
 
 							&:after{
 								content: url('../img/help/blue_arrow.png');
@@ -209,7 +215,7 @@
 
 				#solve-a-problem-section{
 					p{
-						font-size: 140%;
+						font-size: 1.063em;
 
 					}
 				}
@@ -233,7 +239,7 @@
 
 						.slides{
 							h5{
-								font-size: 14px;
+								font-size: 0.875em;
 								font-family: @benton-med;
 								color: #4b4d51;
 							}
@@ -248,7 +254,7 @@
 										font-family: @benton-light;
 										color: #4b4d51;
 										text-decoration: none;
-										font-size: 20px;
+										font-size: 1.250em;
 
 										&:hover{
 											color: #009bbb;
@@ -261,12 +267,13 @@
 						.flex-control-paging{
 							position: absolute;
 							bottom: -12px;
-							margin-left: 6px;
+							margin-left: 20px;
 							z-index: 50;
 
 							li{
 								display: inline-table;
-								margin-right: -10px;
+								margin-right: 12px;
+								margin-left: 0;
 
 								a{
 									text-indent: -9999px;
@@ -346,7 +353,7 @@
 				color: #5f5f5f;
 				font-weight: bold;
 				text-transform: uppercase;
-				font-size: 14px;
+				font-size: 0.875em;
 			}
 
 			.chatter-table {
@@ -425,4 +432,24 @@
 			
 		}
 	}
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 1200px) {
+	.ae-content{ 
+
+		&[data-page='help']{
+			font-size: 13px;
+		}
+	}
+
+}
+
+@media only screen and (max-width: 1200px) {
+	.ae-content{ 
+
+		&[data-page='help']{
+			font-size: 11px;
+		}
+	}
+
 }

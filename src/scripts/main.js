@@ -150,7 +150,8 @@
         init: function(){
            $('.flexslider').flexslider({
                                 pauseOnHover: true,
-                                animationLoop: true
+                                animationLoop: true,
+                                slideshow: false
                             });
         }
     }

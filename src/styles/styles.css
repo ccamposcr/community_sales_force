@@ -637,7 +637,7 @@ th {
   float: left;
   padding: 12px 0 12px 0;
   border: 1px solid #616469;
-  font: 16px 'BentonSans Book';
+  font: 16px 'BentonSans Medium';
   color: #464749;
   min-height: 18px;
   background: #efefef;
@@ -1745,6 +1745,9 @@ th {
   width: 100%;
   min-height: 220px;
 }
+.ae-content[data-page='help'] {
+  font-size: 16px;
+}
 .ae-content[data-page='help'] .hero {
   min-height: 384px;
   border-bottom: 6px solid #009bbb;
@@ -1795,7 +1798,7 @@ th {
   left: 0;
   right: 0;
   margin: 0 auto;
-  font-size: 20px;
+  font-size: 1.250em;
   display: block;
   width: 32%;
   line-height: 135%;
@@ -1823,6 +1826,10 @@ th {
 }
 .ae-content[data-page='help'] .content-container .breadcrumbs a.need-help {
   float: right;
+}
+.ae-content[data-page='help'] .content-container .breadcrumbs a.need-help span {
+  position: relative;
+  top: -1px;
 }
 .ae-content[data-page='help'] .content-container .breadcrumbs a:hover {
   color: #009bbb;
@@ -1863,8 +1870,7 @@ th {
 }
 .ae-content[data-page='help'] .content-container .main-content .help-section h2.categoryBlockTitle {
   font-family: 'BentonSans Light';
-  font-size: 38px;
-  padding-top: 25px;
+  font-size: 2.375em;
   padding-bottom: 0;
   color: #5f5f5f;
   width: 100%;
@@ -1875,7 +1881,7 @@ th {
 .ae-content[data-page='help'] .content-container .main-content #contribute-section a.blue-box {
   display: block;
   width: 24%;
-  height: 265px;
+  height: 16.563em;
   padding: 3% 3% 0 3%;
   float: left;
   background-color: #1797c1;
@@ -1887,14 +1893,14 @@ th {
   text-align: center;
   display: block;
   padding-bottom: 20px;
-  font-size: 28px;
+  font-size: 1.750em;
   border-bottom: 1px solid #FFF;
 }
 .ae-content[data-page='help'] .content-container .main-content #contribute-section a.blue-box .box-content {
   font-family: 'BentonSans Light';
   color: #FFF;
   text-align: center;
-  font-size: 22px;
+  font-size: 1.375em;
   line-height: 130%;
   margin-top: 20px;
 }
@@ -1905,6 +1911,7 @@ th {
 .ae-content[data-page='help'] .content-container .main-content #contribute-section a.blue-box:hover .box-title {
   color: #06a7cc;
   border-bottom: 1px solid #06a7cc;
+  margin-right: -10px;
 }
 .ae-content[data-page='help'] .content-container .main-content #contribute-section a.blue-box:hover .box-title:after {
   content: url('../img/help/blue_arrow.png');
@@ -1919,7 +1926,7 @@ th {
   margin: 0 5%;
 }
 .ae-content[data-page='help'] .content-container .main-content #solve-a-problem-section p {
-  font-size: 140%;
+  font-size: 1.063em;
 }
 .ae-content[data-page='help'] .content-container .main-content .carousels-section {
   position: relative;
@@ -1936,7 +1943,7 @@ th {
   padding: 0;
 }
 .ae-content[data-page='help'] .content-container .main-content .carousels-section .flexslider .slides h5 {
-  font-size: 14px;
+  font-size: 0.875em;
   font-family: 'BentonSans Medium';
   color: #4b4d51;
 }
@@ -1950,7 +1957,7 @@ th {
   font-family: 'BentonSans Light';
   color: #4b4d51;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1.250em;
 }
 .ae-content[data-page='help'] .content-container .main-content .carousels-section .flexslider .slides ul li a:hover {
   color: #009bbb;
@@ -1958,12 +1965,13 @@ th {
 .ae-content[data-page='help'] .content-container .main-content .carousels-section .flexslider .flex-control-paging {
   position: absolute;
   bottom: -12px;
-  margin-left: 6px;
+  margin-left: 20px;
   z-index: 50;
 }
 .ae-content[data-page='help'] .content-container .main-content .carousels-section .flexslider .flex-control-paging li {
   display: inline-table;
-  margin-right: -10px;
+  margin-right: 12px;
+  margin-left: 0;
 }
 .ae-content[data-page='help'] .content-container .main-content .carousels-section .flexslider .flex-control-paging li a {
   text-indent: -9999px;
@@ -2025,7 +2033,7 @@ th {
   color: #5f5f5f;
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 0.875em;
 }
 .ae-content[data-page='help'] .chatter-container .chatter-table {
   width: 70%;
@@ -2090,6 +2098,16 @@ th {
 .ae-content[data-page='help'] .chatter-container .column-right .chatterContent {
   width: 100%;
   min-height: 250px;
+}
+@media only screen and (max-width: 1400px) and (min-width: 1200px) {
+  .ae-content[data-page='help'] {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .ae-content[data-page='help'] {
+    font-size: 11px;
+  }
 }
 .ext-ie9 b,
 .ext-ie9 strong {
