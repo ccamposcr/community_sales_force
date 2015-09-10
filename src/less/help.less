@@ -167,7 +167,7 @@
 							text-align: center;
 							display: block;
 							padding-bottom: 20px;
-							font-size: 20px;
+							font-size: 28px;
 							border-bottom: 1px solid #FFF;
 						}
 
@@ -175,15 +175,31 @@
 							font-family: @benton-light;
 							color: #FFF;
 							text-align: center;
-							font-size: 18px;
+							font-size: 22px;
     						line-height: 130%;
     						margin-top: 20px;
 						}
 					}
 
 					a.blue-box:hover{
-						background-color: @grey-lighter;
+						background-color: #e9e9e9;
 						text-decoration: none;
+
+						.box-title{
+							color: #06a7cc;
+							border-bottom: 1px solid #06a7cc;
+
+							&:after{
+								content: url('../img/help/blue_arrow.png');
+								position: relative;
+							    left: 10px;
+							    top: 5px;
+							}
+						}
+
+						.box-content{
+							color: #06a7cc;
+						}
 					}
 
 					a.center-blue-box{
@@ -233,6 +249,10 @@
 										color: #4b4d51;
 										text-decoration: none;
 										font-size: 20px;
+
+										&:hover{
+											color: #009bbb;
+										}
 									}
 								}
 							}
@@ -240,24 +260,70 @@
 
 						.flex-control-paging{
 							position: absolute;
-							bottom: -25px;
-							margin-left: 40px;
+							bottom: -12px;
+							margin-left: 6px;
+							z-index: 50;
 
 							li{
 								display: inline-table;
-								margin-right: 10px;
+								margin-right: -10px;
+
+								a{
+									text-indent: -9999px;
+									color: transparent;
+									font-size: 0;
+									width: 10px;
+									height: 10px;
+									background-color: #eeeeee;
+									border: 1px solid #888888;
+									-webkit-border-radius: 20px;
+								    -moz-border-radius: 20px;
+								    border-radius: 20px;
+								    display: block;
+
+									&.flex-active{
+										background-color: #888888;
+									}
+								}
 							}
 						}
 
 						.flex-direction-nav{
 							position: absolute;
-							bottom: -25px;
+							bottom: -6px;
+							z-index: 49;
 
 							li{
 								display: inline-table;
 
+								&.flex-nav-prev{
+									a{
+										width: 0; 
+										height: 0; 
+										border-top: 8px solid transparent;
+										border-bottom: 8px solid transparent; 
+										border-right: 8px solid #888888;
+										text-indent: -999px;
+									    font-size: 0px;
+									    color: transparent;
+									}
+									
+								}
+								    
+
 								&.flex-nav-next{
-									margin-left: 100px;
+									margin-left: 85px;
+
+									a{
+										width: 0;
+									    height: 0;
+									    border-top: 8px solid transparent;
+									    border-bottom: 8px solid transparent;
+									    border-left: 8px solid #888888;
+									    text-indent: -999px;
+									    font-size: 0px;
+									    color: transparent;
+									}
 								}
 							}
 						}
