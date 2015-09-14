@@ -153,12 +153,27 @@
                                 animationLoop: true,
                                 slideshow: false
                             });
+        },
+        resizeBoxes: function(){
+            var _blueBox= $('.blue-box'),
+                blueBoxHeight = _blueBox.height(),
+                boxTitleHeight = _blueBox.find('.box-title').height(),
+                boxContentHeight = _blueBox.find('.box-content').height(),
+                value = 0;
+
+            value = ( (blueBoxHeight/2) - ( (boxTitleHeight + boxContentHeight) /1.2) );
+            _blueBox.find('.box-title').css('margin-top', value);
         }
     }
 
     $(document).on("ready", function(){
         if( $('.ae-content').attr('data-page') === 'help' ){
             helpPageFunctions.init();
+            helpPageFunctions.resizeBoxes();
+
+            $(window).bind("resize", function (){
+                helpPageFunctions.resizeBoxes();
+            });
         }
     });
 }(jQuery));

@@ -163,12 +163,13 @@
 							display: block;
 							width: 24%;
 							height: 264px;
-							padding: 3% 3% 0 3%;
+							padding: 3%;
 							float: left;
 							background-color: #1797c1;
 							text-decoration: none;
 
 							.box-title{
+								margin-top: 0;
 								font-family: @benton-light;
 								color: #FFF;
 								text-align: center;
@@ -185,6 +186,7 @@
 								font-size: 1.063em;
 	    						line-height: 130%;
 	    						margin-top: 20px;
+	    						margin-bottom: 0;
 							}
 						}
 
@@ -195,13 +197,13 @@
 							.box-title{
 								color: #06a7cc;
 								border-bottom: 1px solid #06a7cc;
-								margin-right: -10px;
+								position: relative;
 
 								&:after{
 									content: url('../img/help/blue_arrow.png');
-									position: relative;
-								    left: 10px;
-								    top: 6px;
+									position: absolute;
+								    top: 26px;
+								    margin-left: 10px;
 								}
 							}
 
