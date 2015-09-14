@@ -149,8 +149,7 @@
     var helpPageFunctions  = {
         init: function(){
            $('.flexslider').flexslider({
-                                pauseOnHover: true,
-                                animationLoop: true,
+                                animationLoop: false,
                                 slideshow: false
                             });
         },
