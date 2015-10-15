@@ -222,6 +222,9 @@
 						display: block;
 						width: 33%;
 						float: left;
+						margin: 0;
+						border: none;
+						position: static;
 
 						ul{
 							li{
@@ -259,9 +262,10 @@
 
 						.flex-control-paging{
 							position: absolute;
-							bottom: -15px;
-							margin-left: 24px;
+							bottom: -12px;
+							margin-left: 20px;
 							z-index: 50;
+							width: 70px;
 
 							li{
 								display: inline-table;
@@ -273,6 +277,10 @@
 								    color: #a4a4a4;
 								    text-decoration: none;
 								    cursor: pointer;
+								    text-indent: 0;
+								    background: none;
+								    border: none;
+								    box-shadow: none;
 
 									&.flex-active{
 										color: #6a6a6a;
@@ -284,11 +292,17 @@
 
 						.flex-direction-nav{
 							position: absolute;
-							bottom: -6px;
 							z-index: 49;
+							bottom: -42px;
 
 							li{
 								display: inline-table;
+
+								a{
+									opacity: 1;
+									margin: 0;
+									position: static;
+								}
 
 								&.flex-nav-prev{
 									a{
@@ -300,11 +314,16 @@
 										text-indent: -999px;
 									    font-size: 0px;
 									    color: transparent;
+									    text-shadow: none;
+									    top: 0;
+									    transition: none;
+									    web-transition: none;
 
 									    &.flex-disabled{
 									    	border-right: 8px solid #b1b1b1;
 									    	cursor: default;
 									    	pointer-events: none;
+									    	opacity: 1!important;
 									    }
 									}
 									
@@ -328,6 +347,7 @@
 									    	border-left: 8px solid #b1b1b1;
 									    	cursor: default;
 									    	pointer-events: none;
+									    	opacity: 1!important;
 									    }
 									}
 								}
