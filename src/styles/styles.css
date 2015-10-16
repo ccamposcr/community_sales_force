@@ -1776,6 +1776,7 @@ th {
   top: 32%;
   width: 100%;
   text-align: center;
+  display: none;
 }
 .ae-content[data-page='help'] .hero h2.light {
   color: #fff;
@@ -1796,6 +1797,7 @@ th {
   width: 32%;
   line-height: 135%;
   text-align: center;
+  display: none;
 }
 .ae-content[data-page='help'] .content-container {
   width: 80%;
