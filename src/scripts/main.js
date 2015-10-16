@@ -148,10 +148,27 @@
 
     var helpPageFunctions  = {
         init: function(){
-           $('.flexslider').flexslider({
+           /*$('.flexslider').flexslider({
                                 animationLoop: false,
                                 slideshow: false
-                            });
+                            });*/
+            var minimumSlider = 6;
+            $('.flexslider ul.slides').each(function(){
+                if( $(this).find('li:first-child ul > li').length >= minimumSlider){
+                    $(this).parents('.flexslider').flexslider({
+                        animationLoop: false,
+                        slideshow: false
+                    });
+                }
+                else{
+                    $(this).parents('.flexslider').flexslider({
+                        animationLoop: false,
+                        slideshow: false,
+                        controlNav: false,
+                        directionNav: false
+                    });
+                }
+            });
         },
         resizeBoxes: function(){
             var _blueBox= $('.blue-box'),
