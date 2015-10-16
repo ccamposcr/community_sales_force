@@ -1934,6 +1934,9 @@ th {
   display: block;
   width: 33%;
   float: left;
+  margin: 0;
+  border: none;
+  position: static;
 }
 .ae-content[data-page='help'] .content-container .main-content .carousels-section .flexslider ul li {
   margin: 0;
@@ -1961,9 +1964,10 @@ th {
 }
 .ae-content[data-page='help'] .content-container .main-content .carousels-section .flexslider .flex-control-paging {
   position: absolute;
-  bottom: -15px;
-  margin-left: 24px;
+  bottom: -12px;
+  margin-left: 20px;
   z-index: 50;
+  width: 70px;
 }
 .ae-content[data-page='help'] .content-container .main-content .carousels-section .flexslider .flex-control-paging li {
   display: inline-table;
@@ -1975,6 +1979,10 @@ th {
   color: #a4a4a4;
   text-decoration: none;
   cursor: pointer;
+  text-indent: 0;
+  background: none;
+  border: none;
+  box-shadow: none;
 }
 .ae-content[data-page='help'] .content-container .main-content .carousels-section .flexslider .flex-control-paging li a.flex-active {
   color: #6a6a6a;
@@ -1982,11 +1990,16 @@ th {
 }
 .ae-content[data-page='help'] .content-container .main-content .carousels-section .flexslider .flex-direction-nav {
   position: absolute;
-  bottom: -6px;
   z-index: 49;
+  bottom: -42px;
 }
 .ae-content[data-page='help'] .content-container .main-content .carousels-section .flexslider .flex-direction-nav li {
   display: inline-table;
+}
+.ae-content[data-page='help'] .content-container .main-content .carousels-section .flexslider .flex-direction-nav li a {
+  opacity: 1;
+  margin: 0;
+  position: static;
 }
 .ae-content[data-page='help'] .content-container .main-content .carousels-section .flexslider .flex-direction-nav li.flex-nav-prev a {
   width: 0;
@@ -1997,11 +2010,17 @@ th {
   text-indent: -999px;
   font-size: 0px;
   color: transparent;
+  text-shadow: none;
+  top: 0;
+  -webkit-transition: none;
+          transition: none;
+  web-transition: none;
 }
 .ae-content[data-page='help'] .content-container .main-content .carousels-section .flexslider .flex-direction-nav li.flex-nav-prev a.flex-disabled {
   border-right: 8px solid #b1b1b1;
   cursor: default;
   pointer-events: none;
+  opacity: 1!important;
 }
 .ae-content[data-page='help'] .content-container .main-content .carousels-section .flexslider .flex-direction-nav li.flex-nav-next {
   margin-left: 85px;
@@ -2020,6 +2039,7 @@ th {
   border-left: 8px solid #b1b1b1;
   cursor: default;
   pointer-events: none;
+  opacity: 1!important;
 }
 .ae-content[data-page='help'] .chatter-container {
   padding-left: 10%;
