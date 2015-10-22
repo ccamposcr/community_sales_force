@@ -154,7 +154,7 @@
                             });*/
             var minimumSlider = 6;
             $('.flexslider ul.slides').each(function(){
-                if( $(this).find('li ul > li').length >= minimumSlider){
+                if( $(this).find('li ul > li').length > minimumSlider){
                     $(this).parents('.flexslider').flexslider({
                         animationLoop: false,
                         slideshow: false
